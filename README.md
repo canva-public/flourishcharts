@@ -34,7 +34,7 @@ install.packages("flourishcharts")
 Alternatively, install from GitHub:
 
 ```
-remotes::install_git("canva-public/flourishcharts", subdir="R_package")
+remotes::install_github("canva-public/flourishcharts", subdir="R_package")
 ```
 
 ### Key info
