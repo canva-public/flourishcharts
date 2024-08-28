@@ -20,4 +20,3 @@ jinja2 = "*"
 loguru = "*"
 pathlib = "*"
 numpy = "*"
-flourishcharts = {editable = true, subdirectory = "python_package", ref = "main", git = "ssh://git@github.com/canva/flourish-charts"}
