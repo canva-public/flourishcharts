@@ -1,0 +1,58 @@
+,template_name,template_id,template_version,chart_type,url
+0,audio,@flourish/audio,1.6.0,audio,https://app.flourish.studio/@flourish/audio/1.6.0#api
+1,bar chart race,@flourish/bar-chart-race,16.1.2,bar_race,https://app.flourish.studio/@flourish/bar-chart-race/16.1.2#api
+2,bubble chart,@flourish/bubble-chart,3.1.2,bubble,https://app.flourish.studio/@flourish/bubble-chart/3.1.2#api
+3,calculator,@flourish/calculator,1.7.1,calculator,https://app.flourish.studio/@flourish/calculator/1.7.1#api
+4,cards,@flourish/cards,11.1.2,cards,https://app.flourish.studio/@flourish/cards/11.1.2#api
+5,chord diagram,@flourish/chord-diagram,8.6.1,chord_diagram,https://app.flourish.studio/@flourish/chord-diagram/8.6.1#api
+6,countdown,@flourish/countdown,2.7.1,countdown,https://app.flourish.studio/@flourish/countdown/2.7.1#api
+7,draw the line chart,@flourish/draw-the-line,7.1.2,draw_the_line,https://app.flourish.studio/@flourish/draw-the-line/7.1.2#api
+8,election results chart,@flourish/election-results-chart,9.2.2,election_results,https://app.flourish.studio/@flourish/election-results-chart/9.2.2#api
+9,gantt chart,@flourish/gantt,9.1.2,gantt,https://app.flourish.studio/@flourish/gantt/9.1.2#api
+10,gauge,@flourish/gauge,1.8.1,gauge,https://app.flourish.studio/@flourish/gauge/1.8.1#api
+11,hierarchy,@flourish/hierarchy,20.1.4,treemap,https://app.flourish.studio/@flourish/hierarchy/20.1.4#api
+11,hierarchy,@flourish/hierarchy,20.1.4,circlepacking,https://app.flourish.studio/@flourish/hierarchy/20.1.4#api
+11,hierarchy,@flourish/hierarchy,20.1.4,sunburst,https://app.flourish.studio/@flourish/hierarchy/20.1.4#api
+11,hierarchy,@flourish/hierarchy,20.1.4,bar,https://app.flourish.studio/@flourish/hierarchy/20.1.4#api
+11,hierarchy,@flourish/hierarchy,20.1.4,radialtree,https://app.flourish.studio/@flourish/hierarchy/20.1.4#api
+16,line chart race,@flourish/horserace,16.2.1,horserace,https://app.flourish.studio/@flourish/horserace/16.2.1#api
+17,interactive svg,@flourish/interactive-svg,8.3.1,interactive_svg,https://app.flourish.studio/@flourish/interactive-svg/8.3.1#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,area_stacked,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,area_prop,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,area,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,area_stacked_stream,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_grouped,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_stacked,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_stacked_prop,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_waterfall,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,bar_grouped,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,bar_stacked,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,bar_stacked_prop,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,bar_waterfall,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,donut,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_grouped_line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_stacked_line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,column_stacked_prop_line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,area_stacked_line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+18,"line, bar and pie charts",@flourish/line-bar-pie,32.3.2,line_line,https://app.flourish.studio/@flourish/line-bar-pie/32.3.2#api
+37,marimekko,@flourish/marimekko,3.1.4,marimekko,https://app.flourish.studio/@flourish/marimekko/3.1.4#api
+38,network graph,@flourish/network-graph,12.1.2,network,https://app.flourish.studio/@flourish/network-graph/12.1.2#api
+39,number ticker,@flourish/number-ticker,1.7.1,number_ticker,https://app.flourish.studio/@flourish/number-ticker/1.7.1#api
+40,parliament chart,@flourish/parliament-chart,8.2.1,parliament,https://app.flourish.studio/@flourish/parliament-chart/8.2.1#api
+41,photo slider,@flourish/photo-slider,4.7.1,photo_slider,https://app.flourish.studio/@flourish/photo-slider/4.7.1#api
+42,pictogram,@flourish/pictogram,6.1.2,pictogram,https://app.flourish.studio/@flourish/pictogram/6.1.2#api
+43,quiz,@flourish/quiz,7.7.1,quiz,https://app.flourish.studio/@flourish/quiz/7.7.1#api
+44,radar chart,@flourish/radar,4.1.2,radar,https://app.flourish.studio/@flourish/radar/4.1.2#api
+45,sankey diagram,@flourish/sankey,10.10.2,sankey,https://app.flourish.studio/@flourish/sankey/10.10.2#api
+46,scatter,@flourish/scatter,22.2.3,scatter,https://app.flourish.studio/@flourish/scatter/22.2.3#api
+47,slope chart,@flourish/slope-chart,13.2.1,slope,https://app.flourish.studio/@flourish/slope-chart/13.2.1#api
+48,sports,@flourish/sports,9.1.2,sports,https://app.flourish.studio/@flourish/sports/9.1.2#api
+49,sports race,@flourish/sports-race,2.6.1,sports_race,https://app.flourish.studio/@flourish/sports-race/2.6.1#api
+50,survey,@flourish/survey,14.1.3,survey,https://app.flourish.studio/@flourish/survey/14.1.3#api
+51,svg annotator,@flourish/svg-annotator,6.0.2,svg_annotator,https://app.flourish.studio/@flourish/svg-annotator/6.0.2#api
+52,table,@flourish/table,17.2.1,table,https://app.flourish.studio/@flourish/table/17.2.1#api
+53,text annotator,@flourish/text-annotator,3.9.1,text_annotator,https://app.flourish.studio/@flourish/text-annotator/3.9.1#api
+54,timeline,@flourish/timeline,2.1.2,timeline,https://app.flourish.studio/@flourish/timeline/2.1.2#api
+55,tournament,@flourish/tournament,1.7.1,tournament,https://app.flourish.studio/@flourish/tournament/1.7.1#api
+56,word cloud,@flourish/word-cloud,3.10.1,word_cloud,https://app.flourish.studio/@flourish/word-cloud/3.10.1#api

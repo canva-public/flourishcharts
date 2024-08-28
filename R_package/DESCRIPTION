@@ -1,0 +1,45 @@
+Package: flourishcharts
+Title: Flourish for R and Python
+Version: 1.0.0.0
+Authors@R: c(
+    person(given = "Zoe",
+           family = "Meers",
+           role = c("aut", "cre", "trl", "cph"),
+           email = "zoe.m@canva.com"),
+    person(given = "Alex",
+           family = "Sadleir",
+           role = c("aut"),
+           email = "alexs@canva.com"),
+    person(given = "Luisa",
+           family = "Bider",
+           role = c("aut"),
+           email = "luisa@canva.com")
+    )
+Description: Interactive data visualization for data practitioners. 'flourishcharts' allows users to visualize their data 
+  using Flourish charts that are grounded in data storytelling principles. Users can create racing bar & line
+  charts, as well as other interactive elements commonly found in d3 graphics, easily in R and Python. 
+  The package relies on an enterprise API provided by Flourish.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.2.0),
+    knitr,
+    rmarkdown,
+    reticulate,
+    tidyr,
+    here
+Config/testthat/edition: 3
+Depends: 
+    R (>= 4.00)
+Imports:
+    htmlwidgets,
+    htmltools,
+    jsonlite,
+    dplyr,
+    httr,
+    utils
+VignetteBuilder: knitr

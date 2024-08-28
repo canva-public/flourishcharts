@@ -1,0 +1,27 @@
+---
+title: "Setting up API keys"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Setting up API keys}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+Setting up Flourish Charts requires setting up a Flourish API key.
+
+R users can store their Flourish API key in one of two places:
+
+* Inside the `flourish()` function which has a parameter called `api_key`. Pass a string to this argument.
+* In your `~/.Renviron` file where you can store sensitive bits of information or, alternatively, information you want available every time you run R code. This is safer as the API key cannot be accessed if you decide to share the R file containing Flourish Charts code.
+If you choose the latter, please store your key in the file as follows:
+
+```
+FLOURISH_API_KEY="..."
+```
+
+The `flourish()` function will recognize this variable, grabbing the API key without the end-user needing to specify every single time.
+
+If you do not have an `~/.Renviron` file, create one from your terminal by running `touch ~/.Renviron && open ~/.Renviron`.
+
+Restart R after saving the variable for it to take effect.
