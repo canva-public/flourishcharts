@@ -1,0 +1,128 @@
+---
+title: "Creating Flourish graphs in R"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Creating Flourish graphs in R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setup, message=F}
+library(dplyr)
+library(tidyr)
+library(flourishcharts)
+```
+
+
+Flourish primarily depends on two main functions in R/Python. They are `flourish` and a `bind_..._data()` function. The `...` depends on the chart type. An R user can specify their preferred chart type and bind data columns to the graph. In R, A list of Flourish functions can be found by running `flourishcharts::`, typing `?flourishcharts` in your console, or heading over to the references page in this site. 
+
+The following chunks show some example charts using Gapminder data, with my accompanying notes.
+
+The `flourishcharts` package provides the data `flourish_api_documentation` frame with metadata about each graph (template ID, version, a simplified chart name for end users, and a URL to Flourish's API documentation). 
+
+
+### R 
+
+```{r}
+head(flourish_api_documentation)
+```
+
+
+`flourishcharts` works by requiring two functions to plot Flourish graphs:
+
+ * `flourish()` in R or `Flourish()` in Python:
+    * `chart_type` **(mandatory arg)** -- a string that must match a value in `flourish_api_documentation["chart_type"]`.
+    * `api_key` **(mandatory arg)** -- Flourish API key, defaults to `Sys.getenv("FLOURISH_API_KEY")` or `os.environ.get("FLOURISH_API_KEY")`.
+    * `chart_description` **(optional arg)** -- a string with the chart description for screen readers.
+
+And secondly, a binding data function which performs the same function as in flourish.studio, whereby the user matches data columns to the graph properties. 
+
+To start with, a scatter plot is laid out as follows. If a user wants to add additional details they can by running `set_..._details()`--in this case, `set_scatter_details()`.
+
+Each function argument pipes into the other and takes on the additional arguments to the graph. The pipe can be the base pipe `|>` or the maggrittr pipe `%>%`. In Python, users can append new functions to the assigned graph.
+
+## Scatterplot
+
+```{r scatter, eval = F}
+scatterplot <- flourish(
+  chart_type = "scatter"
+) |>
+  bind_scatter_data(
+    data = gapminder,
+    x = "gdpPercap",
+    y = "lifeExp",
+    slider = "year",
+    size = "pop",
+    color = "continent",
+    metadata = c("country", "year")
+  )
+scatterplot
+```
+
+
+## Line graph
+
+### R
+
+```{r, eval = F}
+line_data <- gapminder |>
+  filter(country %in% c(
+    "Australia",
+    "New Zealand",
+    "United States",
+    "Rwanda",
+    "Sierra Leone",
+    "Indonesia",
+    "Brazil"
+  )) |>
+  select("country", "year", "lifeExp") |>
+  pivot_wider(id_cols = "year", names_from = "country", values_from = "lifeExp")
+
+line_chart <- flourish(
+  chart_type = "line"
+) |>
+  bind_line_bar_pie_data(
+    data = line_data,
+    label = "year",
+    value = colnames(line_data[, c(2:8)])
+  ) |>
+  set_line_bar_pie_details(
+    chart_layout_title = "Life expectancy from the 1950s to 2007",
+    chart_layout_subtitle = "Selected countries include Australia, New Zealand, the US, Rwanda, Indonesia, Sierra Leone, and Brazil."
+  )
+line_chart
+```
+
+
+## Bar chart race
+
+
+```{r, eval = F}
+bcr_data <- gapminder |>
+  filter(country %in% c(
+    "Australia",
+    "New Zealand",
+    "United States",
+    "Rwanda",
+    "Sierra Leone",
+    "Indonesia",
+    "Brazil"
+  )) |>
+  select(c("country", "continent", "year", "lifeExp")) |>
+  pivot_wider(id_cols = c("country", "continent"), names_from = "year", values_from = "lifeExp")
+
+bcr <- flourish("bar_race") |>
+  bind_bar_chart_race_data(
+    data = bcr_data,
+    label = "country",
+    values = colnames(bcr_data[, c(3:14)]),
+    category = "continent"
+  ) |>
+  set_bar_chart_race_details(
+    chart_layout_title = "Life expectancy from the 1950s to 2007",
+    chart_layout_subtitle = "Selected countries include Australia, New Zealand, the US, Rwanda, Indonesia, Sierra Leone, and Brazil."
+  )
+bcr
+```
+

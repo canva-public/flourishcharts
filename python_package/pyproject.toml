@@ -1,0 +1,53 @@
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project]
+name = "flourishcharts"
+version = "1.0.0.0"
+dependencies = [ "anywidget",]
+readme = "README.md"
+[[project.authors]]
+name = "Zoe Meers"
+email = "zoe.m@canva.com"
+
+[[project.authors]]
+name = "Alex Sadleir"
+email = "alexs@canva.com"
+
+[[project.authors]]
+name = "Vincey Au"
+email = "vincey@canva.com"
+
+[[project.authors]]
+name = "Luisa Bider"
+email = "luisa@canva.com"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [ "watchfiles", "jupyterlab",]
+
+[tool.setuptools.package-data]
+flourishcharts = [ "*.txt", "*.rst", "*.csv",]
+
+[tool.hatch.build]
+only-packages = true
+artifacts = [ "flourishcharts/static/*", "flourishcharts/data/*", "flourishcharts/internal_data/*",]
+
+[tool.setuptools.packages.find]
+where = [ "flourishcharts",]
+
+[tool.hatch.envs.default]
+features = [ "dev",]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [ "flourishcharts/static/widget.js",]
+skip-if-exists = [ "flourishcharts/static/widget.js",]
+dependencies = [ "hatch-jupyter-builder>=0.9.1",]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+npm = "npm"
+build_cmd = "build"
