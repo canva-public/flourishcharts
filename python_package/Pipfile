@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+anywidget = "*"
+pandas = "*"
+jupyterlab = "*"
+flourishcharts = {subdirectory = "python_package", ref = "main", git = "https://github.com/canva-public/flourishcharts"}
+
+[dev-packages]
+black = "*"
+isort = "*"
+watchfiles = "*"
+setuptools = "*"
+pydoc-markdown = "*"
+pyyaml = "*"
+jinja2 = "*"
+loguru = "*"
+pathlib = "*"
+numpy = "*"
