@@ -40,7 +40,7 @@ Bind bubble chart data
 }
 \examples{
 try(
-  flourish(chart_type = "bubble", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_bubble_chart_data(gapminder)
+  flourish(chart_type = "bubble", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_bubble_chart_data(gapminder)
 )
 }

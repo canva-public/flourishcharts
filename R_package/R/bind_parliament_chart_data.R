@@ -5,18 +5,19 @@
 #' @param seats Seats. This should point to the column with election data. Flourish type hint: columns
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_parliament_chart_data(gapminder)
+#'   flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_parliament_chart_data(gapminder)
 #' )
 #' @export
 
 bind_parliament_chart_data <- function(
-    .,
-    data = NULL,
-    party = NULL,
-    seats = NULL) {
+  .,
+  data = NULL,
+  party = NULL,
+  seats = NULL
+) {
   bindings_error(., "parliament_chart")
 
   old_list <- .

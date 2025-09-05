@@ -1097,7 +1097,7 @@ Set radar chart chart details
 \examples{
 try(
   flourish(chart_type = "radar", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_radar_data(gapminder) |>
-  set_radar_details()
+    bind_radar_data(gapminder) |>
+    set_radar_details()
 )
 }

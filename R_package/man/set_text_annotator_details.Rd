@@ -454,8 +454,8 @@ Set text annotator chart details
 }
 \examples{
 try(
-  flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_text_annotator_data(gapminder) |> 
-  set_text_annotator_details()
+  flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_text_annotator_data(gapminder) |>
+    set_text_annotator_details()
 )
 }

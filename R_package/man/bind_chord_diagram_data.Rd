@@ -32,6 +32,6 @@ Bind chord diagram data
 \examples{
 try(
   flourish(chart_type = "chord_diagram", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_chord_diagram_data(gapminder)
+    bind_chord_diagram_data(gapminder)
 )
 }

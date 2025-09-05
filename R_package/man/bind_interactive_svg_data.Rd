@@ -44,6 +44,6 @@ Bind interactive svg data
 \examples{
 try(
   flourish(chart_type = "interactive_svg", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_interactive_svg_data(gapminder)
+    bind_interactive_svg_data(gapminder)
 )
 }

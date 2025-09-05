@@ -160,7 +160,7 @@ class Flourish(
                 "api_key": self.api_key,
                 "width": self.width,
                 "height": self.height,
-                "base_visualisation_data_format": "object"
+                "base_visualisation_data_format": "object",
             }
         if base_visualisation_id is None:
             self._model_data = {
@@ -172,7 +172,7 @@ class Flourish(
                 "version": self.template_version,
                 "api_key": self.api_key,
                 "width": self.width,
-                "height": self.height
+                "height": self.height,
             }
 
     def __repr__(self):

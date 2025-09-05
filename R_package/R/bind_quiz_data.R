@@ -18,65 +18,100 @@
 #' @param results_media Media. An image to show with the result. Add an image URL or right-click on a cell to upload an image. Flourish type hint: column
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "quiz", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_quiz_data(gapminder)
+#'   flourish(chart_type = "quiz", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_quiz_data(gapminder)
 #' )
 #' @export
 
 bind_quiz_data <- function(
-    .,
-    questions_data = NULL,
-    scores_data = NULL,
-    results_data = NULL,
-    questions_text = NULL,
-    questions_explanation = NULL,
-    questions_input_type = NULL,
-    questions_answers = NULL,
-    questions_suffix = NULL,
-    questions_choices = NULL,
-    scores_question = NULL,
-    scores_range = NULL,
-    scores_explanation = NULL,
-    scores_media = NULL,
-    results_range = NULL,
-    results_text = NULL,
-    results_media = NULL) {
+  .,
+  questions_data = NULL,
+  scores_data = NULL,
+  results_data = NULL,
+  questions_text = NULL,
+  questions_explanation = NULL,
+  questions_input_type = NULL,
+  questions_answers = NULL,
+  questions_suffix = NULL,
+  questions_choices = NULL,
+  scores_question = NULL,
+  scores_range = NULL,
+  scores_explanation = NULL,
+  scores_media = NULL,
+  results_range = NULL,
+  results_text = NULL,
+  results_media = NULL
+) {
   bindings_error(., "quiz")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(questions_data)) {
-    columns_questions_data <- c(paste(questions_text), paste(questions_explanation), paste(questions_input_type), paste(questions_answers), paste(questions_suffix), paste(questions_choices), NULL)
-    columns_questions_data <- columns_questions_data[!sapply(columns_questions_data, is.null)]
+    columns_questions_data <- c(
+      paste(questions_text),
+      paste(questions_explanation),
+      paste(questions_input_type),
+      paste(questions_answers),
+      paste(questions_suffix),
+      paste(questions_choices),
+      NULL
+    )
+    columns_questions_data <- columns_questions_data[
+      !sapply(columns_questions_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_questions_data, split = ",", fixed = TRUE),
       data = questions_data
     )
     int_columns_questions_data <- sapply(questions_data, is.integer)
-    questions_data[, int_columns_questions_data] <- lapply(questions_data[, int_columns_questions_data], as.character)
+    questions_data[, int_columns_questions_data] <- lapply(
+      questions_data[, int_columns_questions_data],
+      as.character
+    )
   }
   if (!is.null(scores_data)) {
-    columns_scores_data <- c(paste(scores_question), paste(scores_range), paste(scores_explanation), paste(scores_media), NULL)
-    columns_scores_data <- columns_scores_data[!sapply(columns_scores_data, is.null)]
+    columns_scores_data <- c(
+      paste(scores_question),
+      paste(scores_range),
+      paste(scores_explanation),
+      paste(scores_media),
+      NULL
+    )
+    columns_scores_data <- columns_scores_data[
+      !sapply(columns_scores_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_scores_data, split = ",", fixed = TRUE),
       data = scores_data
     )
     int_columns_scores_data <- sapply(scores_data, is.integer)
-    scores_data[, int_columns_scores_data] <- lapply(scores_data[, int_columns_scores_data], as.character)
+    scores_data[, int_columns_scores_data] <- lapply(
+      scores_data[, int_columns_scores_data],
+      as.character
+    )
   }
   if (!is.null(results_data)) {
-    columns_results_data <- c(paste(results_range), paste(results_text), paste(results_media), NULL)
-    columns_results_data <- columns_results_data[!sapply(columns_results_data, is.null)]
+    columns_results_data <- c(
+      paste(results_range),
+      paste(results_text),
+      paste(results_media),
+      NULL
+    )
+    columns_results_data <- columns_results_data[
+      !sapply(columns_results_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_results_data, split = ",", fixed = TRUE),
       data = results_data
     )
     int_columns_results_data <- sapply(results_data, is.integer)
-    results_data[, int_columns_results_data] <- lapply(results_data[, int_columns_results_data], as.character)
+    results_data[, int_columns_results_data] <- lapply(
+      results_data[, int_columns_results_data],
+      as.character
+    )
   }
   new_list$x$data$questions <- questions_data
   new_list$x$data$scores <- scores_data

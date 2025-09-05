@@ -1,0 +1,13 @@
+node_modules
+.venv
+dist
+
+# Python
+__pycache__
+.ipynb_checkpoints
+
+canviz/static
+
+.envrc
+
+anywidget-test

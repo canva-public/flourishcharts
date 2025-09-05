@@ -607,8 +607,8 @@ Set interactive svg chart details
 }
 \examples{
 try(
-  flourish(chart_type = "interactive_svg", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_interactive_svg_data(gapminder) |> 
-  set_interactive_svg_details()
+  flourish(chart_type = "interactive_svg", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_interactive_svg_data(gapminder) |>
+    set_interactive_svg_details()
 )
 }

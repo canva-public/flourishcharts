@@ -1,5 +1,6 @@
 test_that("bindings error works", {
-  flourish_correct_bindings <- flourish("scatter") |> bind_scatter_data(gapminder, x = "lifeExp", y = "gdpPercap")
+  flourish_correct_bindings <- flourish("scatter") |>
+    bind_scatter_data(gapminder, x = "lifeExp", y = "gdpPercap")
   expect_no_error(flourish_correct_bindings)
 })
 

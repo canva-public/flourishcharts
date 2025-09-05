@@ -11,38 +11,54 @@
 #' @param metadata Info for popups. One or more columns of information (text, image URLs, embedded charts etc) to include in popups and panelsFlourish type hint: columns
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_gantt_data(gapminder)
+#'   flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_gantt_data(gapminder)
 #' )
 #' @export
 
 bind_gantt_data <- function(
-    .,
-    gantt_data = NULL,
-    start_date = NULL,
-    end_date = NULL,
-    task = NULL,
-    grouping = NULL,
-    color = NULL,
-    progress = NULL,
-    filter = NULL,
-    metadata = NULL) {
+  .,
+  gantt_data = NULL,
+  start_date = NULL,
+  end_date = NULL,
+  task = NULL,
+  grouping = NULL,
+  color = NULL,
+  progress = NULL,
+  filter = NULL,
+  metadata = NULL
+) {
   bindings_error(., "gantt")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(gantt_data)) {
-    columns_gantt_data <- c(paste(start_date), paste(end_date), paste(task), paste(grouping), paste(color), paste(progress), paste(filter), paste(metadata), NULL)
-    columns_gantt_data <- columns_gantt_data[!sapply(columns_gantt_data, is.null)]
+    columns_gantt_data <- c(
+      paste(start_date),
+      paste(end_date),
+      paste(task),
+      paste(grouping),
+      paste(color),
+      paste(progress),
+      paste(filter),
+      paste(metadata),
+      NULL
+    )
+    columns_gantt_data <- columns_gantt_data[
+      !sapply(columns_gantt_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_gantt_data, split = ",", fixed = TRUE),
       data = gantt_data
     )
     int_columns_gantt_data <- sapply(gantt_data, is.integer)
-    gantt_data[, int_columns_gantt_data] <- lapply(gantt_data[, int_columns_gantt_data], as.character)
+    gantt_data[, int_columns_gantt_data] <- lapply(
+      gantt_data[, int_columns_gantt_data],
+      as.character
+    )
   }
   new_list$x$data$gantt <- gantt_data
   new_list$x$bindings$gantt$start_date <- start_date

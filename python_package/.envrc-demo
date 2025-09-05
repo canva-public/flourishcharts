@@ -1,0 +1,2 @@
+# Add Flourish API key
+export FLOURISH_API_KEY="..."

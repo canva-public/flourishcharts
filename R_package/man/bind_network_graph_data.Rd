@@ -49,7 +49,7 @@ Bind network graph data
 }
 \examples{
 try(
-  flourish(chart_type = "network", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_network_graph_data(gapminder)
+  flourish(chart_type = "network", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_network_graph_data(gapminder)
 )
 }

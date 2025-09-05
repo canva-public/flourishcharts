@@ -637,8 +637,8 @@ Set chord diagram chart details
 }
 \examples{
 try(
-  flourish(chart_type = "chord_diagram", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_chord_diagram_data(gapminder) |> 
-  set_chord_diagram_details()
+  flourish(chart_type = "chord_diagram", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_chord_diagram_data(gapminder) |>
+    set_chord_diagram_details()
 )
 }

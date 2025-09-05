@@ -32,6 +32,6 @@ Bind table data
 \examples{
 try(
   flourish(chart_type = "table", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_table_data(gapminder)
+    bind_table_data(gapminder)
 )
 }

@@ -1129,8 +1129,8 @@ Set timeline chart details
 }
 \examples{
 try(
-  flourish(chart_type = "timeline", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_timeline_data(gapminder) |> 
-  set_timeline_details()
+  flourish(chart_type = "timeline", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_timeline_data(gapminder) |>
+    set_timeline_details()
 )
 }

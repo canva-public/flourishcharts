@@ -40,7 +40,7 @@ Bind calculator data
 }
 \examples{
 try(
-  flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_calculator_data(gapminder)
+  flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_calculator_data(gapminder)
 )
 }

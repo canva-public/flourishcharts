@@ -1,3 +1,137 @@
+## 2025-08-29: R pkg v1.5.3.5, Python pkg v1.5.3.5
+
+The following templates have been added or updated:
+
+| template_id                      | old_version   | new_version   | action   | package_function                             |
+|:---------------------------------|:--------------|:--------------|:---------|:---------------------------------------------|
+| @flourish/text-annotator         | 4.4.4         | 4.5.1         | update   | `[bind/set]_text_annotator_[data/details]`   |
+| @flourish/sankey                 | 12.1.2        | 12.3.2        | update   | `[bind/set]_sankey_[data/details]`           |
+| @flourish/calendar               | 3.1.2         | 3.4.2         | update   | `[bind/set]_calendar_[data/details]`         |
+| @flourish/photo-slider           | 5.4.4         | 5.6.1         | update   | `[bind/set]_photo_slider_[data/details]`     |
+| @flourish/sports-race            | 4.0.3         | 4.3.1         | update   | `[bind/set]_sports_race_[data/details]`      |
+| @flourish/pictogram              | 8.1.2         | 8.4.1         | update   | `[bind/set]_pictogram_[data/details]`        |
+| @flourish/number-ticker          | 2.4.4         | 2.5.1         | update   | `[bind/set]_number_ticker_[data/details]`    |
+| @flourish/network-graph          | 16.1.2        | 16.3.1        | update   | `[bind/set]_network_[data/details]`          |
+| @flourish/survey                 | 18.0.2        | 18.3.1        | update   | `[bind/set]_survey_[data/details]`           |
+| @flourish/radar                  | 6.0.2         | 6.3.2         | update   | `[bind/set]_radar_[data/details]`            |
+| @flourish/interactive-svg        | 9.7.2         | 9.9.1         | update   | `[bind/set]_interactive_svg_[data/details]`  |
+| @flourish/sports                 | 11.1.2        | 11.4.1        | update   | `[bind/set]_sports_[data/details]`           |
+| @flourish/slope-chart            | 16.1.2        | 16.4.2        | update   | `[bind/set]_slope_[data/details]`            |
+| @flourish/draw-the-line          | 9.1.2         | 9.4.0         | update   | `[bind/set]_draw_the_line_[data/details]`    |
+| @flourish/quiz                   | 8.6.2         | 8.9.0         | update   | `[bind/set]_quiz_[data/details]`             |
+| @flourish/tournament             | 2.7.2         | 2.9.1         | update   | `[bind/set]_tournament_[data/details]`       |
+| @flourish/election-results-chart | 12.1.2        | 12.4.1        | update   | `[bind/set]_election_results_[data/details]` |
+| @flourish/gauge                  | 3.1.2         | 3.2.2         | update   | `[bind/set]_gauge_[data/details]`            |
+| @flourish/word-cloud             | 5.0.2         | 5.2.1         | update   | `[bind/set]_word_cloud_[data/details]`       |
+| @flourish/parliament-chart       | 10.0.2        | 10.2.1        | update   | `[bind/set]_parliament_[data/details]`       |
+| @flourish/horserace              | 18.0.2        | 18.1.2        | update   | `[bind/set]_horserace_[data/details]`        |
+| @flourish/marimekko              | 6.0.2         | 6.3.3         | update   | `[bind/set]_marimekko_[data/details]`        |
+| @flourish/hierarchy              | 24.1.2        | 24.4.2        | update   | `[bind/set]_hierarchy_[data/details]`        |
+| @flourish/countdown              | 4.0.2         | 4.1.1         | update   | `[bind/set]_countdown_[data/details]`        |
+| @flourish/chord-diagram          | 10.1.2        | 10.2.1        | update   | `[bind/set]_chord_diagram_[data/details]`    |
+| @flourish/cards                  | 14.2.2        | 15.0.3        | update   | `[bind/set]_cards_[data/details]`            |
+| @flourish/calculator             | 2.6.2         | 2.7.1         | update   | `[bind/set]_calculator_[data/details]`       |
+| @flourish/bubble-chart           | 5.0.2         | 5.3.1         | update   | `[bind/set]_bubble_[data/details]`           |
+| @flourish/audio                  | 2.4.4         | 2.5.1         | update   | `[bind/set]_audio_[data/details]`            |
+| @flourish/timeline               | 5.1.1         | 5.4.0         | update   | `[bind/set]_timeline_[data/details]`         |
+| @flourish/table                  | 21.1.4        | 21.5.0        | update   | `[bind/set]_table_[data/details]`            |
+| @flourish/scatter                | 33.1.4        | 33.5.0        | update   | `[bind/set]_scatter_[data/details]`          |
+| @flourish/line-bar-pie           | 38.0.0        | 38.5.0        | update   | `[bind/set]_line_bar_pie_[data/details]`     |
+| @flourish/gantt                  | 11.1.2        | 11.5.0        | update   | `[bind/set]_gantt_[data/details]`            |
+| @flourish/bar-chart-race         | 18.2.1        | 18.8.0        | update   | `[bind/set]_bar_race_[data/details]`         |
+
+## 2025-08-29: R pkg v1.4.2.4, Python pkg v1.4.2.4
+
+The Flourish Live API was updated to v5.4.2.
+
+## 2025-05-22: R pkg v1.3.2.4, Python pkg v1.3.2.4
+
+The following templates have been added or updated:
+
+| template_id                      | old_version   | new_version   | action   | package_function                             |
+|:---------------------------------|:--------------|:--------------|:---------|:---------------------------------------------|
+| @flourish/audio                  | 2.0.0         | 2.4.4         | update   | `[bind/set]_audio_[data/details]`            |
+| @flourish/bar-chart-race         | 17.0.0        | 18.2.1        | update   | `[bind/set]_bar_race_[data/details]`         |
+| @flourish/bubble-chart           | 4.1.0         | 5.0.2         | update   | `[bind/set]_bubble_[data/details]`           |
+| @flourish/calculator             | 2.0.0         | 2.6.2         | update   | `[bind/set]_calculator_[data/details]`       |
+| @flourish/calendar               | 2.1.0         | 3.1.2         | update   | `[bind/set]_calendar_[data/details]`         |
+| @flourish/cards                  | 12.1.0        | 14.2.2        | update   | `[bind/set]_cards_[data/details]`            |
+| @flourish/chord-diagram          | 9.1.0         | 10.1.2        | update   | `[bind/set]_chord_diagram_[data/details]`    |
+| @flourish/countdown              | 3.0.0         | 4.0.2         | update   | `[bind/set]_countdown_[data/details]`        |
+| @flourish/draw-the-line          | 8.0.0         | 9.1.2         | update   | `[bind/set]_draw_the_line_[data/details]`    |
+| @flourish/election-results-chart | 11.1.0        | 12.1.2        | update   | `[bind/set]_election_results_[data/details]` |
+| @flourish/gantt                  | 10.1.0        | 11.1.2        | update   | `[bind/set]_gantt_[data/details]`            |
+| @flourish/gauge                  | 2.0.0         | 3.1.2         | update   | `[bind/set]_gauge_[data/details]`            |
+| @flourish/hierarchy              | 22.1.0        | 24.1.2        | update   | `[bind/set]_hierarchy_[data/details]`        |
+| @flourish/horserace              | 17.0.0        | 18.0.2        | update   | `[bind/set]_horserace_[data/details]`        |
+| @flourish/interactive-svg        | 9.1.0         | 9.7.2         | update   | `[bind/set]_interactive_svg_[data/details]`  |
+| @flourish/line-bar-pie           | 34.1.0        | 38.0.0        | update   | `[bind/set]_line_bar_pie_[data/details]`     |
+| @flourish/marimekko              | 4.1.0         | 6.0.2         | update   | `[bind/set]_marimekko_[data/details]`        |
+| @flourish/network-graph          | 14.0.0        | 16.1.2        | update   | `[bind/set]_network_[data/details]`          |
+| @flourish/number-ticker          | 2.0.0         | 2.4.4         | update   | `[bind/set]_number_ticker_[data/details]`    |
+| @flourish/parliament-chart       | 9.0.0         | 10.0.2        | update   | `[bind/set]_parliament_[data/details]`       |
+| @flourish/photo-slider           | 5.0.0         | 5.4.4         | update   | `[bind/set]_photo_slider_[data/details]`     |
+| @flourish/pictogram              | 7.1.0         | 8.1.2         | update   | `[bind/set]_pictogram_[data/details]`        |
+| @flourish/quiz                   | 8.0.0         | 8.6.2         | update   | `[bind/set]_quiz_[data/details]`             |
+| @flourish/radar                  | 5.1.0         | 6.0.2         | update   | `[bind/set]_radar_[data/details]`            |
+| @flourish/sankey                 | 11.1.0        | 12.1.2        | update   | `[bind/set]_sankey_[data/details]`           |
+| @flourish/scatter                | 26.1.0        | 33.1.4        | update   | `[bind/set]_scatter_[data/details]`          |
+| @flourish/slope-chart            | 15.1.0        | 16.1.2        | update   | `[bind/set]_slope_[data/details]`            |
+| @flourish/sports                 | 10.1.0        | 11.1.2        | update   | `[bind/set]_sports_[data/details]`           |
+| @flourish/sports-race            | 3.0.0         | 4.0.3         | update   | `[bind/set]_sports_race_[data/details]`      |
+| @flourish/survey                 | 16.1.0        | 18.0.2        | update   | `[bind/set]_survey_[data/details]`           |
+| @flourish/table                  | 19.0.0        | 21.1.4        | update   | `[bind/set]_table_[data/details]`            |
+| @flourish/text-annotator         | 4.0.0         | 4.4.4         | update   | `[bind/set]_text_annotator_[data/details]`   |
+| @flourish/timeline               | 3.0.0         | 5.1.1         | update   | `[bind/set]_timeline_[data/details]`         |
+| @flourish/tournament             | 2.1.0         | 2.7.2         | update   | `[bind/set]_tournament_[data/details]`       |
+| @flourish/word-cloud             | 4.1.0         | 5.0.2         | update   | `[bind/set]_word_cloud_[data/details]`       |
+
+## 2024-10-25: R pkg v1.2.1.3, Python pkg v1.2.1.3
+
+The following templates have been added or updated:
+
+| template_id                      | old_version   | new_version   | action   | package_function                             |
+|:---------------------------------|:--------------|:--------------|:---------|:---------------------------------------------|
+| @flourish/audio                  | 1.6.0         | 2.0.0         | update   | `[bind/set]_audio_[data/details]`            |
+| @flourish/bar-chart-race         | 16.1.2        | 17.0.0        | update   | `[bind/set]_bar_race_[data/details]`         |
+| @flourish/bubble-chart           | 3.1.2         | 4.1.0         | update   | `[bind/set]_bubble_[data/details]`           |
+| @flourish/calculator             | 1.7.1         | 2.0.0         | update   | `[bind/set]_calculator_[data/details]`       |
+| @flourish/calendar               |               | 2.1.0         | add      | `[bind/set]_calendar_[data/details]`         |
+| @flourish/cards                  | 11.1.2        | 12.1.0        | update   | `[bind/set]_cards_[data/details]`            |
+| @flourish/chord-diagram          | 8.6.1         | 9.1.0         | update   | `[bind/set]_chord_diagram_[data/details]`    |
+| @flourish/countdown              | 2.7.1         | 3.0.0         | update   | `[bind/set]_countdown_[data/details]`        |
+| @flourish/draw-the-line          | 7.1.2         | 8.0.0         | update   | `[bind/set]_draw_the_line_[data/details]`    |
+| @flourish/election-results-chart | 9.2.2         | 11.1.0        | update   | `[bind/set]_election_results_[data/details]` |
+| @flourish/gantt                  | 9.1.2         | 10.1.0        | update   | `[bind/set]_gantt_[data/details]`            |
+| @flourish/gauge                  | 1.8.1         | 2.0.0         | update   | `[bind/set]_gauge_[data/details]`            |
+| @flourish/hierarchy              | 20.1.4        | 22.1.0        | update   | `[bind/set]_hierarchy_[data/details]`        |
+| @flourish/horserace              | 16.2.1        | 17.0.0        | update   | `[bind/set]_horserace_[data/details]`        |
+| @flourish/interactive-svg        | 8.3.1         | 9.1.0         | update   | `[bind/set]_interactive_svg_[data/details]`  |
+| @flourish/line-bar-pie           | 32.3.2        | 34.1.0        | update   | `[bind/set]_line_bar_pie_[data/details]`     |
+| @flourish/marimekko              | 3.1.4         | 4.1.0         | update   | `[bind/set]_marimekko_[data/details]`        |
+| @flourish/network-graph          | 12.1.2        | 14.0.0        | update   | `[bind/set]_network_[data/details]`          |
+| @flourish/number-ticker          | 1.7.1         | 2.0.0         | update   | `[bind/set]_number_ticker_[data/details]`    |
+| @flourish/parliament-chart       | 8.2.1         | 9.0.0         | update   | `[bind/set]_parliament_[data/details]`       |
+| @flourish/photo-slider           | 4.7.1         | 5.0.0         | update   | `[bind/set]_photo_slider_[data/details]`     |
+| @flourish/pictogram              | 6.1.2         | 7.1.0         | update   | `[bind/set]_pictogram_[data/details]`        |
+| @flourish/quiz                   | 7.7.1         | 8.0.0         | update   | `[bind/set]_quiz_[data/details]`             |
+| @flourish/radar                  | 4.1.2         | 5.1.0         | update   | `[bind/set]_radar_[data/details]`            |
+| @flourish/sankey                 | 10.10.2       | 11.1.0        | update   | `[bind/set]_sankey_[data/details]`           |
+| @flourish/scatter                | 22.2.3        | 26.1.0        | update   | `[bind/set]_scatter_[data/details]`          |
+| @flourish/slope-chart            | 13.2.1        | 15.1.0        | update   | `[bind/set]_slope_[data/details]`            |
+| @flourish/sports                 | 9.1.2         | 10.1.0        | update   | `[bind/set]_sports_[data/details]`           |
+| @flourish/sports-race            | 2.6.1         | 3.0.0         | update   | `[bind/set]_sports_race_[data/details]`      |
+| @flourish/survey                 | 14.1.3        | 16.1.0        | update   | `[bind/set]_survey_[data/details]`           |
+| @flourish/table                  | 17.2.1        | 19.0.0        | update   | `[bind/set]_table_[data/details]`            |
+| @flourish/text-annotator         | 3.9.1         | 4.0.0         | update   | `[bind/set]_text_annotator_[data/details]`   |
+| @flourish/timeline               | 2.1.2         | 3.0.0         | update   | `[bind/set]_timeline_[data/details]`         |
+| @flourish/tournament             | 1.7.1         | 2.1.0         | update   | `[bind/set]_tournament_[data/details]`       |
+| @flourish/word-cloud             | 3.10.1        | 4.1.0         | update   | `[bind/set]_word_cloud_[data/details]`       |
+
+## 2024-10-22: R pkg v1.1.1.3, Python pkg v1.1.1.3
+
+The Flourish Live API was updated to v5.2.2.
+
 ## 2024-08-23: R pkg v1.0.0.0, Python pkg v1.0.0.0
 
 The package has been renamed to `flourishcharts` and package versions reset to v1.0.0.0. 

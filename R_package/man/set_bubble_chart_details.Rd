@@ -802,8 +802,8 @@ Set bubble chart chart details
 }
 \examples{
 try(
-  flourish(chart_type = "bubble", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_bubble_chart_data(gapminder) |> 
-  set_bubble_chart_details()
+  flourish(chart_type = "bubble", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_bubble_chart_data(gapminder) |>
+    set_bubble_chart_details()
 )
 }

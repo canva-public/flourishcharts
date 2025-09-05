@@ -522,7 +522,7 @@ set_sankey_details(
 
 \item{filter_show_all}{Include "All". Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{filter_show_all_text}{“All” label. Flourish type hint: string, defaults to \code{NULL}}
+\item{filter_show_all_text}{"All" label. Flourish type hint: string, defaults to \code{NULL}}
 
 \item{chart_controls_style_font_size}{Text size. Flourish type hint: number, defaults to \code{NULL}}
 
@@ -964,8 +964,8 @@ Set sankey diagram chart details
 }
 \examples{
 try(
-  flourish(chart_type = "sankey", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_sankey_data(gapminder) |> 
-  set_sankey_details()
+  flourish(chart_type = "sankey", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_sankey_data(gapminder) |>
+    set_sankey_details()
 )
 }

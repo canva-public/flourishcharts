@@ -85,7 +85,7 @@ Bind marimekko data
 }
 \examples{
 try(
-  flourish(chart_type = "marimekko", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_marimekko_data(gapminder)
+  flourish(chart_type = "marimekko", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_marimekko_data(gapminder)
 )
 }

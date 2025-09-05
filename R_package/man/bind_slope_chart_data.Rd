@@ -85,7 +85,7 @@ Bind slope chart data
 }
 \examples{
 try(
-  flourish(chart_type = "slope", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_slope_chart_data(gapminder)
+  flourish(chart_type = "slope", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_slope_chart_data(gapminder)
 )
 }

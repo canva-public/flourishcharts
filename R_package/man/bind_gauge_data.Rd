@@ -40,7 +40,7 @@ Bind gauge data
 }
 \examples{
 try(
-  flourish(chart_type = "gauge", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_gauge_data(gapminder)
+  flourish(chart_type = "gauge", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_gauge_data(gapminder)
 )
 }

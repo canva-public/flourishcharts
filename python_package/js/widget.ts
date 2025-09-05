@@ -1,7 +1,7 @@
 import type { RenderContext } from "@anywidget/types";
 import "./widget.css";
 
-import flourishliveApi from 'https://cdn.jsdelivr.net/npm/@flourish/live-api@5.1.0/+esm'
+import flourishliveApi from 'https://cdn.jsdelivr.net/npm/@flourish/live-api@5.4.2/+esm'
 
 interface WidgetModel {
 	_model_data: {

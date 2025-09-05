@@ -23,7 +23,7 @@ Bind parliament chart data
 }
 \examples{
 try(
-  flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_parliament_chart_data(gapminder)
+  flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_parliament_chart_data(gapminder)
 )
 }

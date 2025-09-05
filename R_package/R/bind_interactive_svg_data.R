@@ -10,30 +10,40 @@
 #' @param metadata Info for popups. One or more columns of information (text, image URLs, embedded charts etc) to include in custom  popups and panels Flourish type hint: columns
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
 #'   flourish(chart_type = "interactive_svg", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-#'   bind_interactive_svg_data(gapminder)
+#'     bind_interactive_svg_data(gapminder)
 #' )
 #' @export
 
 bind_interactive_svg_data <- function(
-    .,
-    data = NULL,
-    id = NULL,
-    reveal_id = NULL,
-    h3 = NULL,
-    h4 = NULL,
-    content = NULL,
-    link = NULL,
-    metadata = NULL) {
+  .,
+  data = NULL,
+  id = NULL,
+  reveal_id = NULL,
+  h3 = NULL,
+  h4 = NULL,
+  content = NULL,
+  link = NULL,
+  metadata = NULL
+) {
   bindings_error(., "interactive_svg")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(data)) {
-    columns_data <- c(paste(id), paste(reveal_id), paste(h3), paste(h4), paste(content), paste(link), paste(metadata), NULL)
+    columns_data <- c(
+      paste(id),
+      paste(reveal_id),
+      paste(h3),
+      paste(h4),
+      paste(content),
+      paste(link),
+      paste(metadata),
+      NULL
+    )
     columns_data <- columns_data[!sapply(columns_data, is.null)]
     spelling_check_column_names(
       strings = strsplit(columns_data, split = ",", fixed = TRUE),

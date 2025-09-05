@@ -1,6 +1,8 @@
 Package: flourishcharts
 Title: 'Flourish' for 'R' and 'Python'
-Version: 1.0.0.1
+Version: 1.5.3.5
+Author: Alex Sadleir [aut, cre], Zoe Meers [aut, trl], Luisa Bider [aut], Flourish Studio (Canva UK Operations Ltd) [cph]
+Maintainer: Alex Sadleir <alexs@canva.com>
 Authors@R: c(
     person(given = "Zoe",
            family = "Meers",
@@ -8,14 +10,14 @@ Authors@R: c(
            email = "zoe.m@canva.com"),
     person(given = "Alex",
            family = "Sadleir",
-           role = c("aut"),
+           role = c("aut", "cre"),
            email = "alexs@canva.com"),
     person(given = "Luisa",
            family = "Bider",
            role = c("aut"),
            email = "luisa@canva.com"),
     person(given = "Flourish Studio (Canva UK Operations Ltd)",
-           role = c("cre",  "cph"),
+           role = c("cph"),
            email = "flourish-dashboard-service-account@canva.com")
     )
 Description: Interactive data visualization for data practitioners. 'flourishcharts' allows users to visualize their data 
@@ -27,7 +29,7 @@ Encoding: UTF-8
 Language: en
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.2.0),
     knitr,

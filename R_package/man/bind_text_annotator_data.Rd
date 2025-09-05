@@ -23,7 +23,7 @@ Bind text annotator data
 }
 \examples{
 try(
-  flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_text_annotator_data(gapminder)
+  flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_text_annotator_data(gapminder)
 )
 }

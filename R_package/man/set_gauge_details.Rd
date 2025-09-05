@@ -965,7 +965,7 @@ Set gauge chart details
 \examples{
 try(
   flourish(chart_type = "gauge", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_gauge_data(gapminder) |>
-  set_gauge_details()
+    bind_gauge_data(gapminder) |>
+    set_gauge_details()
 )
 }

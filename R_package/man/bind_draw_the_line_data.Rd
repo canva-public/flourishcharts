@@ -31,7 +31,7 @@ Bind draw the line chart data
 }
 \examples{
 try(
-  flourish(chart_type = "draw_the_line", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_draw_the_line_data(gapminder)
+  flourish(chart_type = "draw_the_line", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_draw_the_line_data(gapminder)
 )
 }

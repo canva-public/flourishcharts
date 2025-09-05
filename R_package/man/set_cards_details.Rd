@@ -796,7 +796,7 @@ set_cards_details(
 
 \item{filter_show_all}{Include "All". Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{filter_show_all_text}{“All” label. Flourish type hint: string, defaults to \code{NULL}}
+\item{filter_show_all_text}{"All" label. Flourish type hint: string, defaults to \code{NULL}}
 
 \item{chart_controls_style_font_size}{Text size. Flourish type hint: number, defaults to \code{NULL}}
 
@@ -1120,8 +1120,8 @@ Set cards chart details
 }
 \examples{
 try(
-  flourish(chart_type = "cards", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_cards_data(gapminder) |> 
-  set_cards_details()
+  flourish(chart_type = "cards", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_cards_data(gapminder) |>
+    set_cards_details()
 )
 }

@@ -430,7 +430,7 @@ Set countdown chart details
 }
 \examples{
 try(
-  flourish(chart_type = "countdown", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  set_countdown_details()
+  flourish(chart_type = "countdown", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    set_countdown_details()
 )
 }

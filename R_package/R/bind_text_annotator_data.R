@@ -5,18 +5,19 @@
 #' @param note Annotation. The annotation content. Flourish type hint: column
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_text_annotator_data(gapminder)
+#'   flourish(chart_type = "text_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_text_annotator_data(gapminder)
 #' )
 #' @export
 
 bind_text_annotator_data <- function(
-    .,
-    data = NULL,
-    text = NULL,
-    note = NULL) {
+  .,
+  data = NULL,
+  text = NULL,
+  note = NULL
+) {
   bindings_error(., "text_annotator")
 
   old_list <- .

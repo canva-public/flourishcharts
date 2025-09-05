@@ -256,7 +256,7 @@ set_word_cloud_details(
 
 \item{excluded_words}{Exclude words. Flourish type hint: text, defaults to \code{NULL}}
 
-\item{strip_trailing_s}{Strip all trailing “s” from words. e.g. "mother" and "mothers" are considered one word. This includes both apostrophe and quotation mark forms (s and s). Flourish type hint: boolean, defaults to \code{NULL}}
+\item{strip_trailing_s}{Strip all trailing "s" from words. e.g. "mother" and "mothers" are considered one word. This includes both apostrophe and quotation mark forms (s and s). Flourish type hint: boolean, defaults to \code{NULL}}
 
 \item{convert_to_lowercase}{Convert all words to lowercase. e.g. "mother" and "Mother" are considered one word. This will also apply to the words in the Exclude words setting. Flourish type hint: boolean, defaults to \code{NULL}}
 
@@ -724,8 +724,8 @@ Set word cloud chart details
 }
 \examples{
 try(
-  flourish(chart_type = "word_cloud", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_word_cloud_data(gapminder) |> 
-  set_word_cloud_details()
+  flourish(chart_type = "word_cloud", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_word_cloud_data(gapminder) |>
+    set_word_cloud_details()
 )
 }

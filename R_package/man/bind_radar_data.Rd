@@ -76,7 +76,7 @@ Bind radar chart data
 }
 \examples{
 try(
-  flourish(chart_type = "radar", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_radar_data(gapminder)
+  flourish(chart_type = "radar", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_radar_data(gapminder)
 )
 }

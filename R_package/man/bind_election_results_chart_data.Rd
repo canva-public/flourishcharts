@@ -37,7 +37,7 @@ Bind election results chart data
 }
 \examples{
 try(
-  flourish(chart_type = "election_results", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_election_results_chart_data(gapminder)
+  flourish(chart_type = "election_results", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_election_results_chart_data(gapminder)
 )
 }

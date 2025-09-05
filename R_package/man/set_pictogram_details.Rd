@@ -1138,8 +1138,8 @@ Set pictogram chart details
 }
 \examples{
 try(
-  flourish(chart_type = "pictogram", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_pictogram_data(gapminder) |> 
-  set_pictogram_details()
+  flourish(chart_type = "pictogram", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_pictogram_data(gapminder) |>
+    set_pictogram_details()
 )
 }

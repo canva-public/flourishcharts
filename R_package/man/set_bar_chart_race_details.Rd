@@ -460,9 +460,9 @@ set_bar_chart_race_details(
 
 \item{sort_control}{Show sort control. Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{sort_descending_text}{“Highest” label. Flourish type hint: string, defaults to \code{NULL}}
+\item{sort_descending_text}{"Highest" label. Flourish type hint: string, defaults to \code{NULL}}
 
-\item{sort_ascending_text}{“Lowest” label. Flourish type hint: string, defaults to \code{NULL}}
+\item{sort_ascending_text}{"Lowest" label. Flourish type hint: string, defaults to \code{NULL}}
 
 \item{chart_controls_style_font_size}{Text size. Flourish type hint: number, defaults to \code{NULL}}
 
@@ -928,8 +928,8 @@ Set bar chart race chart details
 }
 \examples{
 try(
-  flourish(chart_type = "bar_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_bar_chart_race_data(gapminder) |> 
-  set_bar_chart_race_details()
+  flourish(chart_type = "bar_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_bar_chart_race_data(gapminder) |>
+    set_bar_chart_race_details()
 )
 }

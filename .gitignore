@@ -103,6 +103,7 @@ ve/
 Manifest.toml
 
 /python_package/node_modules/
+/python_package/canva_upload.py
 
 .env
 

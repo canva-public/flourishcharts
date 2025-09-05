@@ -740,9 +740,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -768,9 +768,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -933,9 +933,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -956,9 +956,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -1038,9 +1038,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -1179,9 +1179,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -1211,9 +1211,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -1240,9 +1240,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -1595,9 +1595,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -1736,9 +1736,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -1759,9 +1759,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -1919,9 +1919,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -2109,9 +2109,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -3301,9 +3301,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -3753,9 +3753,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -3846,9 +3846,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_text_legend = ["auto", "custom", "off"] + [None]
         if text_legend not in list_text_legend:
@@ -4318,9 +4318,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -4341,9 +4341,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -4423,9 +4423,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -4564,9 +4564,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -4596,9 +4596,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -4625,9 +4625,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -4980,9 +4980,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -5121,9 +5121,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -5144,9 +5144,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -5304,9 +5304,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -5494,9 +5494,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -6501,9 +6501,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -6806,9 +6806,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -6899,9 +6899,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_size_legend_show_legend = [True, False] + [None]
         if chart_size_legend_show_legend not in list_chart_size_legend_show_legend:
@@ -7413,9 +7413,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -7450,9 +7450,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["size_by_format"][
             "prefix"
         ] = chart_number_date_format_prefix
@@ -7566,9 +7566,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -7589,9 +7589,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -7671,9 +7671,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -7812,9 +7812,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -7844,9 +7844,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -7873,9 +7873,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -8228,9 +8228,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -8369,9 +8369,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -8392,9 +8392,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -8552,9 +8552,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -8742,9 +8742,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -10161,9 +10161,9 @@ class DetailsMixin:
                 if design_question_font_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["design"]["question"][
-                    "font_weight"
-                ] = filtered_dict[design_question_font_weight]
+                self.state["state"]["design"]["question"]["font_weight"] = (
+                    filtered_dict[design_question_font_weight]
+                )
 
         list_design_question_font_style = ["normal", "italic"] + [None]
         if design_question_font_style not in list_design_question_font_style:
@@ -10696,9 +10696,9 @@ class DetailsMixin:
                 if date_calendar_position_vertical in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["date"]["calendar_position"][
-                    "vertical"
-                ] = filtered_dict[date_calendar_position_vertical]
+                self.state["state"]["date"]["calendar_position"]["vertical"] = (
+                    filtered_dict[date_calendar_position_vertical]
+                )
 
         list_date_calendar_position_horizontal = ["left", "center", "right"] + [None]
         if (
@@ -10722,9 +10722,9 @@ class DetailsMixin:
                 if date_calendar_position_horizontal in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["date"]["calendar_position"][
-                    "horizontal"
-                ] = filtered_dict[date_calendar_position_horizontal]
+                self.state["state"]["date"]["calendar_position"]["horizontal"] = (
+                    filtered_dict[date_calendar_position_horizontal]
+                )
 
         list_rating_icon_type = ["star", "circle", "check"] + [None]
         if rating_icon_type not in list_rating_icon_type:
@@ -11217,9 +11217,9 @@ class DetailsMixin:
                 if design_controls_button_font_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["design"]["controls"]["button"][
-                    "font_weight"
-                ] = filtered_dict[design_controls_button_font_weight]
+                self.state["state"]["design"]["controls"]["button"]["font_weight"] = (
+                    filtered_dict[design_controls_button_font_weight]
+                )
 
         list_design_controls_button_font_style = ["normal", "italic"] + [None]
         if (
@@ -11239,9 +11239,9 @@ class DetailsMixin:
                 if design_controls_button_font_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["design"]["controls"]["button"][
-                    "font_style"
-                ] = filtered_dict[design_controls_button_font_style]
+                self.state["state"]["design"]["controls"]["button"]["font_style"] = (
+                    filtered_dict[design_controls_button_font_style]
+                )
         self.state["state"]["design"]["controls"]["button"][
             "border_width"
         ] = design_controls_button_border_width
@@ -11271,9 +11271,9 @@ class DetailsMixin:
                 if design_controls_button_border_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["design"]["controls"]["button"][
-                    "border_style"
-                ] = filtered_dict[design_controls_button_border_style]
+                self.state["state"]["design"]["controls"]["button"]["border_style"] = (
+                    filtered_dict[design_controls_button_border_style]
+                )
         self.state["state"]["design"]["controls"]["button"][
             "border_color"
         ] = design_controls_button_border_color
@@ -11413,9 +11413,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -11450,9 +11450,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["external_write"]["enabled"] = external_write_enabled
         self.state["state"]["external_write"]["endpoint"] = external_write_endpoint
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
@@ -11477,9 +11477,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -11500,9 +11500,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -11582,9 +11582,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -11723,9 +11723,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -11755,9 +11755,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -11784,9 +11784,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -12139,9 +12139,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -12280,9 +12280,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -12303,9 +12303,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -12463,9 +12463,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -12653,9 +12653,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -14530,9 +14530,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -14793,9 +14793,9 @@ class DetailsMixin:
                 if chart_popup_popup_list_label_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["popups"][
-                    "popup_list_label_weight"
-                ] = filtered_dict[chart_popup_popup_list_label_weight]
+                self.state["state"]["popups"]["popup_list_label_weight"] = (
+                    filtered_dict[chart_popup_popup_list_label_weight]
+                )
 
         list_chart_popup_popup_list_separator = [": ", "  ", " ", "<br />"] + [None]
         if (
@@ -14954,9 +14954,9 @@ class DetailsMixin:
                 if chart_popup_panel_vertical_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["popups"][
-                    "panel_vertical_position"
-                ] = filtered_dict[chart_popup_panel_vertical_position]
+                self.state["state"]["popups"]["panel_vertical_position"] = (
+                    filtered_dict[chart_popup_panel_vertical_position]
+                )
         self.state["state"]["popups"]["panel_text_color"] = chart_popup_panel_text_color
         self.state["state"]["popups"]["panel_font_size"] = chart_popup_panel_font_size
 
@@ -15027,9 +15027,9 @@ class DetailsMixin:
                 if chart_popup_panel_list_label_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["popups"][
-                    "panel_list_label_weight"
-                ] = filtered_dict[chart_popup_panel_list_label_weight]
+                self.state["state"]["popups"]["panel_list_label_weight"] = (
+                    filtered_dict[chart_popup_panel_list_label_weight]
+                )
 
         list_chart_popup_panel_list_separator = [": ", "  ", " ", "<br />"] + [None]
         if (
@@ -15182,9 +15182,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -15275,9 +15275,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_filter_mode = ["none", "single", "multi"] + [None]
         if legend_filter_mode not in list_legend_filter_mode:
@@ -15415,9 +15415,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_controls"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_controls"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_controls"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -15443,9 +15443,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_controls"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_controls"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_controls"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -15650,9 +15650,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -15673,9 +15673,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -15755,9 +15755,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -15896,9 +15896,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -15928,9 +15928,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -15957,9 +15957,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -16312,9 +16312,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -16453,9 +16453,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -16476,9 +16476,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -16636,9 +16636,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -16826,9 +16826,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -17740,9 +17740,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -17971,9 +17971,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -18008,9 +18008,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["label_format"][
             "prefix"
         ] = chart_label_number_date_format_prefix
@@ -18128,9 +18128,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -18151,9 +18151,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -18233,9 +18233,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -18374,9 +18374,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -18406,9 +18406,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -18435,9 +18435,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -18790,9 +18790,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -18931,9 +18931,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -18954,9 +18954,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -19114,9 +19114,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -19304,9 +19304,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -19845,9 +19845,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -19868,9 +19868,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -19950,9 +19950,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -20091,9 +20091,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -20123,9 +20123,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -20152,9 +20152,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -20507,9 +20507,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -20648,9 +20648,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -20671,9 +20671,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -20831,9 +20831,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -21021,9 +21021,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -22249,9 +22249,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -22355,9 +22355,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -22448,9 +22448,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_legend_container_alignment = ["start", "center", "end"] + [None]
         if (
@@ -23293,9 +23293,9 @@ class DetailsMixin:
                 if chart_background_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["background"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_background_background_color_enabled]
+                self.state["state"]["background"]["background_color_enabled"] = (
+                    filtered_dict[chart_background_background_color_enabled]
+                )
 
         list_chart_background_background_image_enabled = [True, False] + [None]
         if (
@@ -23316,9 +23316,9 @@ class DetailsMixin:
                 if chart_background_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["background"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_background_background_image_enabled]
+                self.state["state"]["background"]["background_image_enabled"] = (
+                    filtered_dict[chart_background_background_image_enabled]
+                )
         self.state["state"]["background"][
             "background_color"
         ] = chart_background_background_color
@@ -23351,9 +23351,9 @@ class DetailsMixin:
                 if chart_background_background_image_size in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["background"][
-                    "background_image_size"
-                ] = filtered_dict[chart_background_background_image_size]
+                self.state["state"]["background"]["background_image_size"] = (
+                    filtered_dict[chart_background_background_image_size]
+                )
 
         list_chart_background_background_image_position = [
             "x_min_y_min",
@@ -23392,9 +23392,9 @@ class DetailsMixin:
                 if chart_background_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["background"][
-                    "background_image_position"
-                ] = filtered_dict[chart_background_background_image_position]
+                self.state["state"]["background"]["background_image_position"] = (
+                    filtered_dict[chart_background_background_image_position]
+                )
 
         list_datetime_input_format = [
             "auto",
@@ -23532,9 +23532,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -23569,9 +23569,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["formatter"]["prefix"] = chart_number_date_format_prefix
         self.state["state"]["formatter"]["suffix"] = chart_number_date_format_suffix
         self.state["state"]["formatter"]["n_dec"] = chart_number_date_format_n_dec
@@ -23679,9 +23679,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -23702,9 +23702,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -23784,9 +23784,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -23925,9 +23925,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -23957,9 +23957,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -23986,9 +23986,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -24341,9 +24341,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -24482,9 +24482,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -24505,9 +24505,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -24665,9 +24665,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -24855,9 +24855,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -25971,9 +25971,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -26139,9 +26139,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -26167,9 +26167,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -26383,9 +26383,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -26476,9 +26476,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_legend_container_alignment = ["start", "center", "end"] + [None]
         if (
@@ -27155,9 +27155,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -27192,9 +27192,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -27217,9 +27217,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -27240,9 +27240,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -27322,9 +27322,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -27463,9 +27463,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -27495,9 +27495,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -27524,9 +27524,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -27879,9 +27879,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -28020,9 +28020,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -28043,9 +28043,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -28203,9 +28203,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -28393,9 +28393,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -29841,9 +29841,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -30845,9 +30845,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -30873,9 +30873,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -31090,9 +31090,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -31183,9 +31183,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_continous_legend_show_legend = [True, False] + [None]
         if (
@@ -31269,9 +31269,9 @@ class DetailsMixin:
                 if chart_continous_legend_binned_label_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_continuous"][
-                    "binned_label_mode"
-                ] = filtered_dict[chart_continous_legend_binned_label_mode]
+                self.state["state"]["legend_continuous"]["binned_label_mode"] = (
+                    filtered_dict[chart_continous_legend_binned_label_mode]
+                )
         self.state["state"]["legend_continuous"][
             "binned_label_custom"
         ] = chart_continous_legend_binned_label_custom
@@ -31909,9 +31909,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_area_texture"
-                ] = filtered_dict[chart_axes_highlights_x_area_texture]
+                self.state["state"]["axes_highlights"]["x_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_x_area_texture]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_vertical"
         ] = chart_axes_highlights_x_label_vertical
@@ -31941,9 +31941,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_y_position]
+                self.state["state"]["axes_highlights"]["x_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_y_position]
+                )
 
         list_chart_axes_highlights_x_label_x_position = ["left", "middle", "right"] + [
             None
@@ -31970,9 +31970,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_x_position]
+                self.state["state"]["axes_highlights"]["x_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_x_position]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_max_width"
         ] = chart_axes_highlights_x_label_max_width
@@ -32087,9 +32087,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_area_texture"
-                ] = filtered_dict[chart_axes_highlights_y_area_texture]
+                self.state["state"]["axes_highlights"]["y_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_y_area_texture]
+                )
 
         list_chart_axes_highlights_y_label_x_position = ["left", "middle", "right"] + [
             None
@@ -32116,9 +32116,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_x_position]
+                self.state["state"]["axes_highlights"]["y_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_x_position]
+                )
 
         list_chart_axes_highlights_y_label_y_position = ["above", "middle", "below"] + [
             None
@@ -32145,9 +32145,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_y_position]
+                self.state["state"]["axes_highlights"]["y_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_y_position]
+                )
         self.state["state"]["axes_highlights"][
             "y_label_max_width"
         ] = chart_axes_highlights_y_label_max_width
@@ -32209,9 +32209,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -32232,9 +32232,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -32314,9 +32314,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -32455,9 +32455,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -32487,9 +32487,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -32516,9 +32516,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -32871,9 +32871,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -33012,9 +33012,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -33035,9 +33035,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -33195,9 +33195,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -33385,9 +33385,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -34920,9 +34920,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -35760,9 +35760,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["controls"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["controls"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["controls"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -35974,9 +35974,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -35997,9 +35997,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -36079,9 +36079,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -36220,9 +36220,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -36252,9 +36252,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -36281,9 +36281,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -36636,9 +36636,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -36777,9 +36777,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -36800,9 +36800,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -36960,9 +36960,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -37150,9 +37150,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -38617,9 +38617,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -38843,9 +38843,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -38936,9 +38936,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_position = ["above", "below"] + [None]
         if legend_position not in list_legend_position:
@@ -39526,9 +39526,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -39554,9 +39554,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -39701,9 +39701,9 @@ class DetailsMixin:
                 if chart_size_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["size_by_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_size_filter_controls_button_group_width_mode]
+                self.state["state"]["size_by_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_size_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["size_by_control"][
             "button_group_width_fixed"
         ] = chart_size_filter_controls_button_group_width_fixed
@@ -39731,9 +39731,9 @@ class DetailsMixin:
                 if chart_size_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["size_by_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_size_filter_controls_dropdown_width_mode]
+                self.state["state"]["size_by_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_size_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["size_by_control"][
             "dropdown_width_fixed"
         ] = chart_size_filter_controls_dropdown_width_fixed
@@ -39997,9 +39997,9 @@ class DetailsMixin:
                 if size_by_number_formatter_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["size_by_number_formatter"][
-                    "negative_sign"
-                ] = filtered_dict[size_by_number_formatter_negative_sign]
+                self.state["state"]["size_by_number_formatter"]["negative_sign"] = (
+                    filtered_dict[size_by_number_formatter_negative_sign]
+                )
         self.state["state"]["size_by_number_formatter"][
             "strip_zeros"
         ] = size_by_number_formatter_strip_zeros
@@ -40037,9 +40037,9 @@ class DetailsMixin:
                 if size_by_number_formatter_transform in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["size_by_number_formatter"][
-                    "transform"
-                ] = filtered_dict[size_by_number_formatter_transform]
+                self.state["state"]["size_by_number_formatter"]["transform"] = (
+                    filtered_dict[size_by_number_formatter_transform]
+                )
         self.state["state"]["size_by_number_formatter"][
             "multiply_divide_constant"
         ] = size_by_number_formatter_multiply_divide_constant
@@ -40090,9 +40090,9 @@ class DetailsMixin:
                 if filter_number_formatter_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_number_formatter"][
-                    "negative_sign"
-                ] = filtered_dict[filter_number_formatter_negative_sign]
+                self.state["state"]["filter_number_formatter"]["negative_sign"] = (
+                    filtered_dict[filter_number_formatter_negative_sign]
+                )
         self.state["state"]["filter_number_formatter"][
             "strip_zeros"
         ] = filter_number_formatter_strip_zeros
@@ -40129,9 +40129,9 @@ class DetailsMixin:
                 if filter_number_formatter_transform in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_number_formatter"][
-                    "transform"
-                ] = filtered_dict[filter_number_formatter_transform]
+                self.state["state"]["filter_number_formatter"]["transform"] = (
+                    filtered_dict[filter_number_formatter_transform]
+                )
         self.state["state"]["filter_number_formatter"][
             "multiply_divide_constant"
         ] = filter_number_formatter_multiply_divide_constant
@@ -40160,9 +40160,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -40183,9 +40183,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -40265,9 +40265,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -40406,9 +40406,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -40438,9 +40438,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -40467,9 +40467,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -40822,9 +40822,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -40963,9 +40963,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -40986,9 +40986,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -41146,9 +41146,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -41336,9 +41336,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -42680,9 +42680,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -42708,9 +42708,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -43052,9 +43052,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -44370,9 +44370,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -44393,9 +44393,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -44475,9 +44475,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -44616,9 +44616,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -44648,9 +44648,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -44677,9 +44677,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -45032,9 +45032,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -45173,9 +45173,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -45196,9 +45196,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -45356,9 +45356,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -45546,9 +45546,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -46752,9 +46752,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -46775,9 +46775,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -46857,9 +46857,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -46998,9 +46998,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -47030,9 +47030,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -47059,9 +47059,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -47414,9 +47414,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -47555,9 +47555,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -47578,9 +47578,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -47738,9 +47738,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -47928,9 +47928,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -50220,9 +50220,9 @@ class DetailsMixin:
                 if chart_series_filter_controls_control_type in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["series_control_single"][
-                    "control_type"
-                ] = filtered_dict[chart_series_filter_controls_control_type]
+                self.state["state"]["series_control_single"]["control_type"] = (
+                    filtered_dict[chart_series_filter_controls_control_type]
+                )
         self.state["state"]["series_control_single"][
             "control_styles"
         ] = chart_series_filter_controls_control_styles
@@ -50249,9 +50249,9 @@ class DetailsMixin:
                 if chart_series_filter_controls_button_group in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["series_control_single"][
-                    "button_group"
-                ] = filtered_dict[chart_series_filter_controls_button_group]
+                self.state["state"]["series_control_single"]["button_group"] = (
+                    filtered_dict[chart_series_filter_controls_button_group]
+                )
 
         list_chart_series_filter_controls_button_group_width_mode = [
             "auto",
@@ -50306,9 +50306,9 @@ class DetailsMixin:
                 if chart_series_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["series_control_single"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_series_filter_controls_dropdown_width_mode]
+                self.state["state"]["series_control_single"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_series_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["series_control_single"][
             "dropdown_width_fixed"
         ] = chart_series_filter_controls_dropdown_width_fixed
@@ -50379,9 +50379,9 @@ class DetailsMixin:
                 if chart_row_filter_controls_control_type in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["row_filter_control"][
-                    "control_type"
-                ] = filtered_dict[chart_row_filter_controls_control_type]
+                self.state["state"]["row_filter_control"]["control_type"] = (
+                    filtered_dict[chart_row_filter_controls_control_type]
+                )
         self.state["state"]["row_filter_control"][
             "control_styles"
         ] = chart_row_filter_controls_control_styles
@@ -50408,9 +50408,9 @@ class DetailsMixin:
                 if chart_row_filter_controls_button_group in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["row_filter_control"][
-                    "button_group"
-                ] = filtered_dict[chart_row_filter_controls_button_group]
+                self.state["state"]["row_filter_control"]["button_group"] = (
+                    filtered_dict[chart_row_filter_controls_button_group]
+                )
 
         list_chart_row_filter_controls_button_group_width_mode = [
             "auto",
@@ -50435,9 +50435,9 @@ class DetailsMixin:
                 if chart_row_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["row_filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_row_filter_controls_button_group_width_mode]
+                self.state["state"]["row_filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_row_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["row_filter_control"][
             "button_group_width_fixed"
         ] = chart_row_filter_controls_button_group_width_fixed
@@ -50465,9 +50465,9 @@ class DetailsMixin:
                 if chart_row_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["row_filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_row_filter_controls_dropdown_width_mode]
+                self.state["state"]["row_filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_row_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["row_filter_control"][
             "dropdown_width_fixed"
         ] = chart_row_filter_controls_dropdown_width_fixed
@@ -50590,11 +50590,11 @@ class DetailsMixin:
                 if chart_log_control_y_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["log_control_y"][
-                    "button_group_width_mode"
-                ] = filtered_dict[
-                    chart_log_control_y_filter_controls_button_group_width_mode
-                ]
+                self.state["state"]["log_control_y"]["button_group_width_mode"] = (
+                    filtered_dict[
+                        chart_log_control_y_filter_controls_button_group_width_mode
+                    ]
+                )
         self.state["state"]["log_control_y"][
             "button_group_width_fixed"
         ] = chart_log_control_y_filter_controls_button_group_width_fixed
@@ -50622,11 +50622,11 @@ class DetailsMixin:
                 if chart_log_control_y_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["log_control_y"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[
-                    chart_log_control_y_filter_controls_dropdown_width_mode
-                ]
+                self.state["state"]["log_control_y"]["dropdown_width_mode"] = (
+                    filtered_dict[
+                        chart_log_control_y_filter_controls_dropdown_width_mode
+                    ]
+                )
         self.state["state"]["log_control_y"][
             "dropdown_width_fixed"
         ] = chart_log_control_y_filter_controls_dropdown_width_fixed
@@ -51010,9 +51010,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -52704,9 +52704,9 @@ class DetailsMixin:
                 if chart_background_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_background_background_color_enabled]
+                self.state["state"]["chart_bg"]["background_color_enabled"] = (
+                    filtered_dict[chart_background_background_color_enabled]
+                )
 
         list_chart_background_background_image_enabled = [True, False] + [None]
         if (
@@ -52727,9 +52727,9 @@ class DetailsMixin:
                 if chart_background_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_background_background_image_enabled]
+                self.state["state"]["chart_bg"]["background_image_enabled"] = (
+                    filtered_dict[chart_background_background_image_enabled]
+                )
         self.state["state"]["chart_bg"][
             "background_color"
         ] = chart_background_background_color
@@ -52762,9 +52762,9 @@ class DetailsMixin:
                 if chart_background_background_image_size in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_size"
-                ] = filtered_dict[chart_background_background_image_size]
+                self.state["state"]["chart_bg"]["background_image_size"] = (
+                    filtered_dict[chart_background_background_image_size]
+                )
 
         list_chart_background_background_image_position = [
             "x_min_y_min",
@@ -52803,9 +52803,9 @@ class DetailsMixin:
                 if chart_background_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_position"
-                ] = filtered_dict[chart_background_background_image_position]
+                self.state["state"]["chart_bg"]["background_image_position"] = (
+                    filtered_dict[chart_background_background_image_position]
+                )
         self.state["state"]["number_format_labels"][
             "prefix"
         ] = number_format_labels_prefix
@@ -52850,9 +52850,9 @@ class DetailsMixin:
                 if number_format_labels_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["number_format_labels"][
-                    "negative_sign"
-                ] = filtered_dict[number_format_labels_negative_sign]
+                self.state["state"]["number_format_labels"]["negative_sign"] = (
+                    filtered_dict[number_format_labels_negative_sign]
+                )
         self.state["state"]["number_format_labels"][
             "strip_zeros"
         ] = number_format_labels_strip_zeros
@@ -52884,9 +52884,9 @@ class DetailsMixin:
                 if number_format_labels_transform in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["number_format_labels"][
-                    "transform"
-                ] = filtered_dict[number_format_labels_transform]
+                self.state["state"]["number_format_labels"]["transform"] = (
+                    filtered_dict[number_format_labels_transform]
+                )
         self.state["state"]["number_format_labels"][
             "multiply_divide_constant"
         ] = number_format_labels_multiply_divide_constant
@@ -53025,9 +53025,9 @@ class DetailsMixin:
                 if chart_secondary_number_date_format_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["number_format_secondary"][
-                    "negative_sign"
-                ] = filtered_dict[chart_secondary_number_date_format_negative_sign]
+                self.state["state"]["number_format_secondary"]["negative_sign"] = (
+                    filtered_dict[chart_secondary_number_date_format_negative_sign]
+                )
         self.state["state"]["number_format_secondary"][
             "strip_zeros"
         ] = chart_secondary_number_date_format_strip_zeros
@@ -53065,9 +53065,9 @@ class DetailsMixin:
                 if chart_secondary_number_date_format_transform in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["number_format_secondary"][
-                    "transform"
-                ] = filtered_dict[chart_secondary_number_date_format_transform]
+                self.state["state"]["number_format_secondary"]["transform"] = (
+                    filtered_dict[chart_secondary_number_date_format_transform]
+                )
         self.state["state"]["number_format_secondary"][
             "multiply_divide_constant"
         ] = chart_secondary_number_date_format_multiply_divide_constant
@@ -53233,9 +53233,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -53326,9 +53326,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_position = ["above", "below"] + [None]
         if legend_position not in list_legend_position:
@@ -53904,9 +53904,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_area_texture"
-                ] = filtered_dict[chart_axes_highlights_x_area_texture]
+                self.state["state"]["axes_highlights"]["x_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_x_area_texture]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_vertical"
         ] = chart_axes_highlights_x_label_vertical
@@ -53936,9 +53936,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_y_position]
+                self.state["state"]["axes_highlights"]["x_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_y_position]
+                )
 
         list_chart_axes_highlights_x_label_x_position = ["left", "middle", "right"] + [
             None
@@ -53965,9 +53965,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_x_position]
+                self.state["state"]["axes_highlights"]["x_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_x_position]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_max_width"
         ] = chart_axes_highlights_x_label_max_width
@@ -54082,9 +54082,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_area_texture"
-                ] = filtered_dict[chart_axes_highlights_y_area_texture]
+                self.state["state"]["axes_highlights"]["y_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_y_area_texture]
+                )
 
         list_chart_axes_highlights_y_label_x_position = ["left", "middle", "right"] + [
             None
@@ -54111,9 +54111,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_x_position]
+                self.state["state"]["axes_highlights"]["y_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_x_position]
+                )
 
         list_chart_axes_highlights_y_label_y_position = ["above", "middle", "below"] + [
             None
@@ -54140,9 +54140,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_y_position]
+                self.state["state"]["axes_highlights"]["y_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_y_position]
+                )
         self.state["state"]["axes_highlights"][
             "y_label_max_width"
         ] = chart_axes_highlights_y_label_max_width
@@ -54202,9 +54202,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_weight"
-                ] = filtered_dict[chart_annotations_defaults_text_weight]
+                self.state["state"]["annotations"]["defaults"]["text_weight"] = (
+                    filtered_dict[chart_annotations_defaults_text_weight]
+                )
         self.state["state"]["annotations"]["defaults"][
             "text_size"
         ] = chart_annotations_defaults_text_size
@@ -54281,9 +54281,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_alignment in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_alignment"
-                ] = filtered_dict[chart_annotations_defaults_text_alignment]
+                self.state["state"]["annotations"]["defaults"]["text_alignment"] = (
+                    filtered_dict[chart_annotations_defaults_text_alignment]
+                )
 
         list_chart_annotations_defaults_popup_position = [
             "center",
@@ -54316,9 +54316,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_popup_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "popup_position"
-                ] = filtered_dict[chart_annotations_defaults_popup_position]
+                self.state["state"]["annotations"]["defaults"]["popup_position"] = (
+                    filtered_dict[chart_annotations_defaults_popup_position]
+                )
 
         list_chart_annotations_defaults_line_marker = [
             "none",
@@ -54347,9 +54347,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_line_marker in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "line_marker"
-                ] = filtered_dict[chart_annotations_defaults_line_marker]
+                self.state["state"]["annotations"]["defaults"]["line_marker"] = (
+                    filtered_dict[chart_annotations_defaults_line_marker]
+                )
         self.state["state"]["annotations"]["defaults"][
             "stroke_width"
         ] = chart_annotations_defaults_stroke_width
@@ -54408,9 +54408,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -54431,9 +54431,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -54513,9 +54513,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -54654,9 +54654,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -54686,9 +54686,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -54715,9 +54715,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -55070,9 +55070,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -55211,9 +55211,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -55234,9 +55234,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -55394,9 +55394,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -55584,9 +55584,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -57326,9 +57326,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -58646,9 +58646,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -58674,9 +58674,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -58871,9 +58871,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -58964,9 +58964,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_legend_container_alignment = ["start", "center", "end"] + [None]
         if (
@@ -59589,9 +59589,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_area_texture"
-                ] = filtered_dict[chart_axes_highlights_x_area_texture]
+                self.state["state"]["axes_highlights"]["x_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_x_area_texture]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_vertical"
         ] = chart_axes_highlights_x_label_vertical
@@ -59621,9 +59621,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_y_position]
+                self.state["state"]["axes_highlights"]["x_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_y_position]
+                )
 
         list_chart_axes_highlights_x_label_x_position = ["left", "middle", "right"] + [
             None
@@ -59650,9 +59650,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_x_position]
+                self.state["state"]["axes_highlights"]["x_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_x_position]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_max_width"
         ] = chart_axes_highlights_x_label_max_width
@@ -59767,9 +59767,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_area_texture"
-                ] = filtered_dict[chart_axes_highlights_y_area_texture]
+                self.state["state"]["axes_highlights"]["y_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_y_area_texture]
+                )
 
         list_chart_axes_highlights_y_label_x_position = ["left", "middle", "right"] + [
             None
@@ -59796,9 +59796,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_x_position]
+                self.state["state"]["axes_highlights"]["y_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_x_position]
+                )
 
         list_chart_axes_highlights_y_label_y_position = ["above", "middle", "below"] + [
             None
@@ -59825,9 +59825,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_y_position]
+                self.state["state"]["axes_highlights"]["y_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_y_position]
+                )
         self.state["state"]["axes_highlights"][
             "y_label_max_width"
         ] = chart_axes_highlights_y_label_max_width
@@ -59909,9 +59909,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_weight"
-                ] = filtered_dict[chart_annotations_defaults_text_weight]
+                self.state["state"]["annotations"]["defaults"]["text_weight"] = (
+                    filtered_dict[chart_annotations_defaults_text_weight]
+                )
         self.state["state"]["annotations"]["defaults"][
             "text_size"
         ] = chart_annotations_defaults_text_size
@@ -59988,9 +59988,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_alignment in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_alignment"
-                ] = filtered_dict[chart_annotations_defaults_text_alignment]
+                self.state["state"]["annotations"]["defaults"]["text_alignment"] = (
+                    filtered_dict[chart_annotations_defaults_text_alignment]
+                )
 
         list_chart_annotations_defaults_popup_position = [
             "center",
@@ -60023,9 +60023,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_popup_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "popup_position"
-                ] = filtered_dict[chart_annotations_defaults_popup_position]
+                self.state["state"]["annotations"]["defaults"]["popup_position"] = (
+                    filtered_dict[chart_annotations_defaults_popup_position]
+                )
 
         list_chart_annotations_defaults_line_marker = [
             "none",
@@ -60054,9 +60054,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_line_marker in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "line_marker"
-                ] = filtered_dict[chart_annotations_defaults_line_marker]
+                self.state["state"]["annotations"]["defaults"]["line_marker"] = (
+                    filtered_dict[chart_annotations_defaults_line_marker]
+                )
         self.state["state"]["annotations"]["defaults"][
             "stroke_width"
         ] = chart_annotations_defaults_stroke_width
@@ -60110,9 +60110,9 @@ class DetailsMixin:
                 if chart_background_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_background_background_color_enabled]
+                self.state["state"]["chart_bg"]["background_color_enabled"] = (
+                    filtered_dict[chart_background_background_color_enabled]
+                )
 
         list_chart_background_background_image_enabled = [True, False] + [None]
         if (
@@ -60133,9 +60133,9 @@ class DetailsMixin:
                 if chart_background_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_background_background_image_enabled]
+                self.state["state"]["chart_bg"]["background_image_enabled"] = (
+                    filtered_dict[chart_background_background_image_enabled]
+                )
         self.state["state"]["chart_bg"][
             "background_color"
         ] = chart_background_background_color
@@ -60168,9 +60168,9 @@ class DetailsMixin:
                 if chart_background_background_image_size in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_size"
-                ] = filtered_dict[chart_background_background_image_size]
+                self.state["state"]["chart_bg"]["background_image_size"] = (
+                    filtered_dict[chart_background_background_image_size]
+                )
 
         list_chart_background_background_image_position = [
             "x_min_y_min",
@@ -60209,9 +60209,9 @@ class DetailsMixin:
                 if chart_background_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_position"
-                ] = filtered_dict[chart_background_background_image_position]
+                self.state["state"]["chart_bg"]["background_image_position"] = (
+                    filtered_dict[chart_background_background_image_position]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -60234,9 +60234,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -60257,9 +60257,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -60339,9 +60339,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -60480,9 +60480,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -60512,9 +60512,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -60541,9 +60541,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -60896,9 +60896,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -61037,9 +61037,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -61060,9 +61060,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -61220,9 +61220,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -61410,9 +61410,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -62428,9 +62428,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -62723,9 +62723,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -62816,9 +62816,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_position = ["above", "below"] + [None]
         if legend_position not in list_legend_position:
@@ -62988,9 +62988,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -63025,9 +63025,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -63050,9 +63050,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -63073,9 +63073,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -63155,9 +63155,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -63296,9 +63296,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -63328,9 +63328,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -63357,9 +63357,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -63712,9 +63712,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -63853,9 +63853,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -63876,9 +63876,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -64036,9 +64036,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -64226,9 +64226,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -64785,9 +64785,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -64822,9 +64822,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["value_format"]["prefix"] = value_format_prefix
         self.state["state"]["value_format"]["suffix"] = value_format_suffix
         self.state["state"]["value_format"]["n_dec"] = value_format_n_dec
@@ -64914,9 +64914,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -64937,9 +64937,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -65019,9 +65019,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -65160,9 +65160,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -65192,9 +65192,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -65221,9 +65221,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -65576,9 +65576,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -65717,9 +65717,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -65740,9 +65740,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -65900,9 +65900,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -66090,9 +66090,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -67083,9 +67083,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -67216,9 +67216,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -67309,9 +67309,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_legend_container_alignment = ["start", "center", "end"] + [None]
         if (
@@ -67649,9 +67649,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["controls"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["controls"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["controls"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -67893,9 +67893,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -67930,9 +67930,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -67955,9 +67955,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -67978,9 +67978,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -68060,9 +68060,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -68201,9 +68201,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -68233,9 +68233,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -68262,9 +68262,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -68617,9 +68617,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -68758,9 +68758,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -68781,9 +68781,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -68941,9 +68941,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -69131,9 +69131,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -69646,9 +69646,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -69669,9 +69669,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -69751,9 +69751,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -69892,9 +69892,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -69924,9 +69924,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -69953,9 +69953,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -70308,9 +70308,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -70449,9 +70449,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -70472,9 +70472,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -70632,9 +70632,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -70822,9 +70822,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -72509,9 +72509,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -73029,9 +73029,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["number_localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["number_localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["number_format"]["prefix"] = chart_number_date_format_prefix
         self.state["state"]["number_format"]["suffix"] = chart_number_date_format_suffix
         self.state["state"]["number_format"]["n_dec"] = chart_number_date_format_n_dec
@@ -74237,9 +74237,9 @@ class DetailsMixin:
                 if chart_value_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["value_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_value_filter_controls_button_group_width_mode]
+                self.state["state"]["value_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_value_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["value_control"][
             "button_group_width_fixed"
         ] = chart_value_filter_controls_button_group_width_fixed
@@ -74267,9 +74267,9 @@ class DetailsMixin:
                 if chart_value_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["value_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_value_filter_controls_dropdown_width_mode]
+                self.state["state"]["value_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_value_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["value_control"][
             "dropdown_width_fixed"
         ] = chart_value_filter_controls_dropdown_width_fixed
@@ -74456,9 +74456,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -74479,9 +74479,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -74561,9 +74561,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -74702,9 +74702,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -74734,9 +74734,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -74763,9 +74763,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -75118,9 +75118,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -75259,9 +75259,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -75282,9 +75282,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -75442,9 +75442,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -75632,9 +75632,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -76362,9 +76362,9 @@ class DetailsMixin:
                 if chart_number_date_format_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["slider_number_format"][
-                    "negative_sign"
-                ] = filtered_dict[chart_number_date_format_negative_sign]
+                self.state["state"]["slider_number_format"]["negative_sign"] = (
+                    filtered_dict[chart_number_date_format_negative_sign]
+                )
         self.state["state"]["slider_number_format"][
             "strip_zeros"
         ] = chart_number_date_format_strip_zeros
@@ -76402,9 +76402,9 @@ class DetailsMixin:
                 if chart_number_date_format_transform in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["slider_number_format"][
-                    "transform"
-                ] = filtered_dict[chart_number_date_format_transform]
+                self.state["state"]["slider_number_format"]["transform"] = (
+                    filtered_dict[chart_number_date_format_transform]
+                )
         self.state["state"]["slider_number_format"][
             "multiply_divide_constant"
         ] = chart_number_date_format_multiply_divide_constant
@@ -76465,9 +76465,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -76502,9 +76502,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -76527,9 +76527,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -76550,9 +76550,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -76632,9 +76632,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -76773,9 +76773,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -76805,9 +76805,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -76834,9 +76834,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -77189,9 +77189,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -77330,9 +77330,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -77353,9 +77353,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -77513,9 +77513,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -77703,9 +77703,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -78999,9 +78999,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -79267,9 +79267,9 @@ class DetailsMixin:
                 if chart_radial_axis_x_tick_label_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["radial_axis"][
-                    "x_tick_label_weight"
-                ] = filtered_dict[chart_radial_axis_x_tick_label_weight]
+                self.state["state"]["radial_axis"]["x_tick_label_weight"] = (
+                    filtered_dict[chart_radial_axis_x_tick_label_weight]
+                )
         self.state["state"]["radial_axis"]["y_min"] = chart_radial_axis_y_min
         self.state["state"]["radial_axis"]["y_max"] = chart_radial_axis_y_max
         self.state["state"]["radial_axis"][
@@ -79319,9 +79319,9 @@ class DetailsMixin:
                 if chart_radial_axis_y_tick_label_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["radial_axis"][
-                    "y_tick_label_weight"
-                ] = filtered_dict[chart_radial_axis_y_tick_label_weight]
+                self.state["state"]["radial_axis"]["y_tick_label_weight"] = (
+                    filtered_dict[chart_radial_axis_y_tick_label_weight]
+                )
         self.state["state"]["radial_axis"]["margin_top"] = chart_radial_axis_margin_top
         self.state["state"]["radial_axis"][
             "margin_right"
@@ -79643,9 +79643,9 @@ class DetailsMixin:
                 if chart_facet_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["facets_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_facet_filter_controls_button_group_width_mode]
+                self.state["state"]["facets_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_facet_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["facets_control"][
             "button_group_width_fixed"
         ] = chart_facet_filter_controls_button_group_width_fixed
@@ -79673,9 +79673,9 @@ class DetailsMixin:
                 if chart_facet_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["facets_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_facet_filter_controls_dropdown_width_mode]
+                self.state["state"]["facets_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_facet_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["facets_control"][
             "dropdown_width_fixed"
         ] = chart_facet_filter_controls_dropdown_width_fixed
@@ -79798,9 +79798,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -79826,9 +79826,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -80577,9 +80577,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -80600,9 +80600,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -80682,9 +80682,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -80823,9 +80823,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -80855,9 +80855,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -80884,9 +80884,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -81239,9 +81239,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -81380,9 +81380,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -81403,9 +81403,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -81563,9 +81563,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -81753,9 +81753,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -83098,9 +83098,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -83375,9 +83375,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_controls"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_controls"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_controls"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -83403,9 +83403,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_controls"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_controls"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_controls"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -84135,9 +84135,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -84158,9 +84158,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -84240,9 +84240,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -84381,9 +84381,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -84413,9 +84413,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -84442,9 +84442,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -84797,9 +84797,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -84938,9 +84938,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -84961,9 +84961,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -85121,9 +85121,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -85311,9 +85311,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -87288,9 +87288,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -87519,9 +87519,9 @@ class DetailsMixin:
                 if chart_background_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_background_background_color_enabled]
+                self.state["state"]["chart_bg"]["background_color_enabled"] = (
+                    filtered_dict[chart_background_background_color_enabled]
+                )
 
         list_chart_background_background_image_enabled = [True, False] + [None]
         if (
@@ -87542,9 +87542,9 @@ class DetailsMixin:
                 if chart_background_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_background_background_image_enabled]
+                self.state["state"]["chart_bg"]["background_image_enabled"] = (
+                    filtered_dict[chart_background_background_image_enabled]
+                )
         self.state["state"]["chart_bg"][
             "background_color"
         ] = chart_background_background_color
@@ -87577,9 +87577,9 @@ class DetailsMixin:
                 if chart_background_background_image_size in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_size"
-                ] = filtered_dict[chart_background_background_image_size]
+                self.state["state"]["chart_bg"]["background_image_size"] = (
+                    filtered_dict[chart_background_background_image_size]
+                )
 
         list_chart_background_background_image_position = [
             "x_min_y_min",
@@ -87618,9 +87618,9 @@ class DetailsMixin:
                 if chart_background_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["chart_bg"][
-                    "background_image_position"
-                ] = filtered_dict[chart_background_background_image_position]
+                self.state["state"]["chart_bg"]["background_image_position"] = (
+                    filtered_dict[chart_background_background_image_position]
+                )
         self.state["state"]["margin_top"] = margin_top
         self.state["state"]["margin_right"] = margin_right
         self.state["state"]["margin_bottom"] = margin_bottom
@@ -88780,9 +88780,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["categorical_legend"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["categorical_legend"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -88873,9 +88873,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["categorical_legend"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["categorical_legend"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_continous_legend_show_legend = [True, False] + [None]
         if (
@@ -88959,9 +88959,9 @@ class DetailsMixin:
                 if chart_continous_legend_binned_label_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["continuous_legend"][
-                    "binned_label_mode"
-                ] = filtered_dict[chart_continous_legend_binned_label_mode]
+                self.state["state"]["continuous_legend"]["binned_label_mode"] = (
+                    filtered_dict[chart_continous_legend_binned_label_mode]
+                )
         self.state["state"]["continuous_legend"][
             "binned_label_custom"
         ] = chart_continous_legend_binned_label_custom
@@ -89036,9 +89036,9 @@ class DetailsMixin:
                 if chart_number_date_format_negative_sign in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color_formatting"][
-                    "negative_sign"
-                ] = filtered_dict[chart_number_date_format_negative_sign]
+                self.state["state"]["color_formatting"]["negative_sign"] = (
+                    filtered_dict[chart_number_date_format_negative_sign]
+                )
         self.state["state"]["color_formatting"][
             "strip_zeros"
         ] = chart_number_date_format_strip_zeros
@@ -89609,9 +89609,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -89803,9 +89803,9 @@ class DetailsMixin:
                 if chart_slider_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["slider"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_slider_filter_controls_button_group_width_mode]
+                self.state["state"]["slider"]["button_group_width_mode"] = (
+                    filtered_dict[chart_slider_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["slider"][
             "button_group_width_fixed"
         ] = chart_slider_filter_controls_button_group_width_fixed
@@ -90205,9 +90205,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_area_texture"
-                ] = filtered_dict[chart_axes_highlights_x_area_texture]
+                self.state["state"]["axes_highlights"]["x_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_x_area_texture]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_vertical"
         ] = chart_axes_highlights_x_label_vertical
@@ -90237,9 +90237,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_y_position]
+                self.state["state"]["axes_highlights"]["x_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_y_position]
+                )
 
         list_chart_axes_highlights_x_label_x_position = ["left", "middle", "right"] + [
             None
@@ -90266,9 +90266,9 @@ class DetailsMixin:
                 if chart_axes_highlights_x_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "x_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_x_label_x_position]
+                self.state["state"]["axes_highlights"]["x_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_x_label_x_position]
+                )
         self.state["state"]["axes_highlights"][
             "x_label_max_width"
         ] = chart_axes_highlights_x_label_max_width
@@ -90383,9 +90383,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_area_texture in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_area_texture"
-                ] = filtered_dict[chart_axes_highlights_y_area_texture]
+                self.state["state"]["axes_highlights"]["y_area_texture"] = (
+                    filtered_dict[chart_axes_highlights_y_area_texture]
+                )
 
         list_chart_axes_highlights_y_label_x_position = ["left", "middle", "right"] + [
             None
@@ -90412,9 +90412,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_x_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_x_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_x_position]
+                self.state["state"]["axes_highlights"]["y_label_x_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_x_position]
+                )
 
         list_chart_axes_highlights_y_label_y_position = ["above", "middle", "below"] + [
             None
@@ -90441,9 +90441,9 @@ class DetailsMixin:
                 if chart_axes_highlights_y_label_y_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["axes_highlights"][
-                    "y_label_y_position"
-                ] = filtered_dict[chart_axes_highlights_y_label_y_position]
+                self.state["state"]["axes_highlights"]["y_label_y_position"] = (
+                    filtered_dict[chart_axes_highlights_y_label_y_position]
+                )
         self.state["state"]["axes_highlights"][
             "y_label_max_width"
         ] = chart_axes_highlights_y_label_max_width
@@ -90503,9 +90503,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_weight in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_weight"
-                ] = filtered_dict[chart_annotations_defaults_text_weight]
+                self.state["state"]["annotations"]["defaults"]["text_weight"] = (
+                    filtered_dict[chart_annotations_defaults_text_weight]
+                )
         self.state["state"]["annotations"]["defaults"][
             "text_size"
         ] = chart_annotations_defaults_text_size
@@ -90582,9 +90582,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_text_alignment in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "text_alignment"
-                ] = filtered_dict[chart_annotations_defaults_text_alignment]
+                self.state["state"]["annotations"]["defaults"]["text_alignment"] = (
+                    filtered_dict[chart_annotations_defaults_text_alignment]
+                )
 
         list_chart_annotations_defaults_popup_position = [
             "center",
@@ -90617,9 +90617,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_popup_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "popup_position"
-                ] = filtered_dict[chart_annotations_defaults_popup_position]
+                self.state["state"]["annotations"]["defaults"]["popup_position"] = (
+                    filtered_dict[chart_annotations_defaults_popup_position]
+                )
 
         list_chart_annotations_defaults_line_marker = [
             "none",
@@ -90648,9 +90648,9 @@ class DetailsMixin:
                 if chart_annotations_defaults_line_marker in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["annotations"]["defaults"][
-                    "line_marker"
-                ] = filtered_dict[chart_annotations_defaults_line_marker]
+                self.state["state"]["annotations"]["defaults"]["line_marker"] = (
+                    filtered_dict[chart_annotations_defaults_line_marker]
+                )
         self.state["state"]["annotations"]["defaults"][
             "stroke_width"
         ] = chart_annotations_defaults_stroke_width
@@ -90709,9 +90709,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -90732,9 +90732,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -90814,9 +90814,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -90955,9 +90955,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -90987,9 +90987,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -91016,9 +91016,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -91371,9 +91371,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -91512,9 +91512,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -91535,9 +91535,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -91695,9 +91695,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -91885,9 +91885,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -93131,9 +93131,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -94163,9 +94163,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["controls"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["controls"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["controls"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -94378,9 +94378,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -94471,9 +94471,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_position = ["above", "below"] + [None]
         if legend_position not in list_legend_position:
@@ -94699,9 +94699,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -94722,9 +94722,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -94804,9 +94804,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -94945,9 +94945,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -94977,9 +94977,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -95006,9 +95006,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -95361,9 +95361,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -95502,9 +95502,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -95525,9 +95525,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -95685,9 +95685,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -95875,9 +95875,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -97220,9 +97220,9 @@ class DetailsMixin:
                 if colors_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["colors"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[colors_sequential_custom_domain]
+                self.state["state"]["colors"]["sequential_custom_domain"] = (
+                    filtered_dict[colors_sequential_custom_domain]
+                )
         self.state["state"]["colors"][
             "sequential_domain_min"
         ] = colors_sequential_domain_min
@@ -97280,9 +97280,9 @@ class DetailsMixin:
                 if colors_diverging_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["colors"][
-                    "diverging_custom_domain"
-                ] = filtered_dict[colors_diverging_custom_domain]
+                self.state["state"]["colors"]["diverging_custom_domain"] = (
+                    filtered_dict[colors_diverging_custom_domain]
+                )
         self.state["state"]["colors"][
             "diverging_domain_min"
         ] = colors_diverging_domain_min
@@ -97537,9 +97537,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -97630,9 +97630,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_chart_legend_container_alignment = ["start", "center", "end"] + [None]
         if (
@@ -98293,9 +98293,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["filter_control"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["filter_control"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -98321,9 +98321,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["filter_control"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["filter_control"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["filter_control"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -98509,9 +98509,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -98532,9 +98532,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -98614,9 +98614,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -98755,9 +98755,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -98787,9 +98787,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -98816,9 +98816,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -99171,9 +99171,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -99312,9 +99312,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -99335,9 +99335,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -99495,9 +99495,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -99685,9 +99685,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -100569,9 +100569,9 @@ class DetailsMixin:
             and len(chart_participant_color_scale_categorical_palette) > 1
             and isinstance(chart_participant_color_scale_categorical_palette, list)
         ):
-            self.state["state"]["participant_color"][
-                "categorical_palette"
-            ] = " \n ".join(chart_participant_color_scale_categorical_palette)
+            self.state["state"]["participant_color"]["categorical_palette"] = (
+                " \n ".join(chart_participant_color_scale_categorical_palette)
+            )
         else:
             self.state["state"]["participant_color"][
                 "categorical_palette"
@@ -100588,9 +100588,9 @@ class DetailsMixin:
                 chart_participant_color_scale_categorical_custom_palette, list
             )
         ):
-            self.state["state"]["participant_color"][
-                "categorical_custom_palette"
-            ] = " \n ".join(chart_participant_color_scale_categorical_custom_palette)
+            self.state["state"]["participant_color"]["categorical_custom_palette"] = (
+                " \n ".join(chart_participant_color_scale_categorical_custom_palette)
+            )
         else:
             self.state["state"]["participant_color"][
                 "categorical_custom_palette"
@@ -100621,9 +100621,9 @@ class DetailsMixin:
                 if chart_participant_color_scale_numeric_type in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["participant_color"][
-                    "numeric_type"
-                ] = filtered_dict[chart_participant_color_scale_numeric_type]
+                self.state["state"]["participant_color"]["numeric_type"] = (
+                    filtered_dict[chart_participant_color_scale_numeric_type]
+                )
 
         list_chart_participant_color_scale_binning = [False, True] + [None]
         if (
@@ -100726,9 +100726,9 @@ class DetailsMixin:
                 if chart_participant_color_scale_sequential_color_space in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["participant_color"][
-                    "sequential_color_space"
-                ] = filtered_dict[chart_participant_color_scale_sequential_color_space]
+                self.state["state"]["participant_color"]["sequential_color_space"] = (
+                    filtered_dict[chart_participant_color_scale_sequential_color_space]
+                )
 
         list_chart_participant_color_scale_sequential_custom_domain = [False, True] + [
             None
@@ -100751,11 +100751,11 @@ class DetailsMixin:
                 if chart_participant_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["participant_color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[
-                    chart_participant_color_scale_sequential_custom_domain
-                ]
+                self.state["state"]["participant_color"]["sequential_custom_domain"] = (
+                    filtered_dict[
+                        chart_participant_color_scale_sequential_custom_domain
+                    ]
+                )
         self.state["state"]["participant_color"][
             "sequential_domain_min"
         ] = chart_participant_color_scale_sequential_domain_min
@@ -100807,9 +100807,9 @@ class DetailsMixin:
                 if chart_participant_color_scale_diverging_color_space in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["participant_color"][
-                    "diverging_color_space"
-                ] = filtered_dict[chart_participant_color_scale_diverging_color_space]
+                self.state["state"]["participant_color"]["diverging_color_space"] = (
+                    filtered_dict[chart_participant_color_scale_diverging_color_space]
+                )
 
         list_chart_participant_color_scale_diverging_custom_domain = [False, True] + [
             None
@@ -100832,9 +100832,9 @@ class DetailsMixin:
                 if chart_participant_color_scale_diverging_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["participant_color"][
-                    "diverging_custom_domain"
-                ] = filtered_dict[chart_participant_color_scale_diverging_custom_domain]
+                self.state["state"]["participant_color"]["diverging_custom_domain"] = (
+                    filtered_dict[chart_participant_color_scale_diverging_custom_domain]
+                )
         self.state["state"]["participant_color"][
             "diverging_domain_min"
         ] = chart_participant_color_scale_diverging_domain_min
@@ -101371,9 +101371,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -101394,9 +101394,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -101476,9 +101476,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -101617,9 +101617,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -101649,9 +101649,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -101678,9 +101678,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -102033,9 +102033,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -102174,9 +102174,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -102197,9 +102197,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -102357,9 +102357,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -102547,9 +102547,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -103778,9 +103778,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -104601,9 +104601,9 @@ class DetailsMixin:
                 if chart_filter_controls_button_group_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["controls_filter"][
-                    "button_group_width_mode"
-                ] = filtered_dict[chart_filter_controls_button_group_width_mode]
+                self.state["state"]["controls_filter"]["button_group_width_mode"] = (
+                    filtered_dict[chart_filter_controls_button_group_width_mode]
+                )
         self.state["state"]["controls_filter"][
             "button_group_width_fixed"
         ] = chart_filter_controls_button_group_width_fixed
@@ -104629,9 +104629,9 @@ class DetailsMixin:
                 if chart_filter_controls_dropdown_width_mode in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["controls_filter"][
-                    "dropdown_width_mode"
-                ] = filtered_dict[chart_filter_controls_dropdown_width_mode]
+                self.state["state"]["controls_filter"]["dropdown_width_mode"] = (
+                    filtered_dict[chart_filter_controls_dropdown_width_mode]
+                )
         self.state["state"]["controls_filter"][
             "dropdown_width_fixed"
         ] = chart_filter_controls_dropdown_width_fixed
@@ -104817,9 +104817,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -104910,9 +104910,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
 
         list_legend_position = ["above", "below"] + [None]
         if legend_position not in list_legend_position:
@@ -105056,9 +105056,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -105079,9 +105079,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -105161,9 +105161,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -105302,9 +105302,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -105334,9 +105334,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -105363,9 +105363,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -105718,9 +105718,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -105859,9 +105859,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -105882,9 +105882,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -106042,9 +106042,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -106232,9 +106232,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -107380,9 +107380,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -107403,9 +107403,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -107485,9 +107485,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -107654,9 +107654,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -107686,9 +107686,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -107715,9 +107715,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -108040,9 +108040,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -108180,9 +108180,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -108203,9 +108203,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -108452,9 +108452,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
 
         if (
             chart_layout_screenreader_text_primary is not None
@@ -109474,9 +109474,9 @@ class DetailsMixin:
                 if cell_numeric_horizontal_alignment in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"][
-                    "cell_numeric_horizontal_alignment"
-                ] = filtered_dict[cell_numeric_horizontal_alignment]
+                self.state["state"]["cell_numeric_horizontal_alignment"] = (
+                    filtered_dict[cell_numeric_horizontal_alignment]
+                )
 
         list_cell_vertical_alignment = ["top", "center", "bottom"] + [None]
         if cell_vertical_alignment not in list_cell_vertical_alignment:
@@ -109837,9 +109837,9 @@ class DetailsMixin:
                 if bar_columns_bar_1_proportional in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["bar_columns"][
-                    "bar_1_proportional"
-                ] = filtered_dict[bar_columns_bar_1_proportional]
+                self.state["state"]["bar_columns"]["bar_1_proportional"] = (
+                    filtered_dict[bar_columns_bar_1_proportional]
+                )
         self.state["state"]["bar_columns"][
             "bar_1_same_scale"
         ] = bar_columns_bar_1_same_scale
@@ -110009,9 +110009,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -110399,9 +110399,9 @@ class DetailsMixin:
                 if line_columns_line_1_min_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["line_columns"][
-                    "line_1_min_enabled"
-                ] = filtered_dict[line_columns_line_1_min_enabled]
+                self.state["state"]["line_columns"]["line_1_min_enabled"] = (
+                    filtered_dict[line_columns_line_1_min_enabled]
+                )
         self.state["state"]["line_columns"]["line_1_min"] = line_columns_line_1_min
 
         list_line_columns_line_1_max_enabled = [True, False] + [None]
@@ -110419,9 +110419,9 @@ class DetailsMixin:
                 if line_columns_line_1_max_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["line_columns"][
-                    "line_1_max_enabled"
-                ] = filtered_dict[line_columns_line_1_max_enabled]
+                self.state["state"]["line_columns"]["line_1_max_enabled"] = (
+                    filtered_dict[line_columns_line_1_max_enabled]
+                )
         self.state["state"]["line_columns"]["line_1_max"] = line_columns_line_1_max
 
         list_mobile_view = [False, True] + [None]
@@ -110754,9 +110754,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -110777,9 +110777,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -110859,9 +110859,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -111000,9 +111000,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -111032,9 +111032,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -111061,9 +111061,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -111416,9 +111416,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -111557,9 +111557,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -111580,9 +111580,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -111740,9 +111740,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -111930,9 +111930,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         self.state["state"]["url_state"]["enabled"] = chart_url_settings_enabled
 
         if (
@@ -112584,9 +112584,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -112607,9 +112607,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -112689,9 +112689,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -112830,9 +112830,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -112862,9 +112862,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -112891,9 +112891,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -113246,9 +113246,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -113387,9 +113387,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -113410,9 +113410,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -113570,9 +113570,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -113760,9 +113760,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -115210,9 +115210,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -116758,9 +116758,9 @@ class DetailsMixin:
                 if chart_categorical_legend_show_legend in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "show_legend"
-                ] = filtered_dict[chart_categorical_legend_show_legend]
+                self.state["state"]["legend_categorical"]["show_legend"] = (
+                    filtered_dict[chart_categorical_legend_show_legend]
+                )
 
         list_chart_categorical_legend_title_mode = ["auto", "custom"] + [None]
         if (
@@ -116851,9 +116851,9 @@ class DetailsMixin:
                 if chart_categorical_legend_orientation in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["legend_categorical"][
-                    "orientation"
-                ] = filtered_dict[chart_categorical_legend_orientation]
+                self.state["state"]["legend_categorical"]["orientation"] = (
+                    filtered_dict[chart_categorical_legend_orientation]
+                )
         self.state["state"]["layout"]["body_font"] = chart_layout_body_font
         self.state["state"]["layout"]["font_color"] = chart_layout_font_color
 
@@ -116876,9 +116876,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -116899,9 +116899,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -116981,9 +116981,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -117122,9 +117122,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -117154,9 +117154,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -117183,9 +117183,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -117538,9 +117538,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -117679,9 +117679,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -117702,9 +117702,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -117862,9 +117862,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -118052,9 +118052,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -119347,9 +119347,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -119370,9 +119370,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -119452,9 +119452,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -119593,9 +119593,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -119625,9 +119625,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -119654,9 +119654,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -120009,9 +120009,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -120150,9 +120150,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -120173,9 +120173,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -120333,9 +120333,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -120523,9 +120523,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)
@@ -121485,9 +121485,9 @@ class DetailsMixin:
                 if chart_color_scale_sequential_custom_domain in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["color"][
-                    "sequential_custom_domain"
-                ] = filtered_dict[chart_color_scale_sequential_custom_domain]
+                self.state["state"]["color"]["sequential_custom_domain"] = (
+                    filtered_dict[chart_color_scale_sequential_custom_domain]
+                )
         self.state["state"]["color"][
             "sequential_domain_min"
         ] = chart_color_scale_sequential_domain_min
@@ -121699,9 +121699,9 @@ class DetailsMixin:
                 if chart_number_localization_input_decimal_separator in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "input_decimal_separator"
-                ] = filtered_dict[chart_number_localization_input_decimal_separator]
+                self.state["state"]["localization"]["input_decimal_separator"] = (
+                    filtered_dict[chart_number_localization_input_decimal_separator]
+                )
 
         list_chart_number_localization_output_separators = [
             ",.",
@@ -121736,9 +121736,9 @@ class DetailsMixin:
                 if chart_number_localization_output_separators in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["localization"][
-                    "output_separators"
-                ] = filtered_dict[chart_number_localization_output_separators]
+                self.state["state"]["localization"]["output_separators"] = (
+                    filtered_dict[chart_number_localization_output_separators]
+                )
 
         list_chart_popup_mode = ["none", "popup", "panel", "both"] + [None]
         if chart_popup_mode not in list_chart_popup_mode:
@@ -122203,9 +122203,9 @@ class DetailsMixin:
                 if chart_layout_background_color_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_color_enabled"
-                ] = filtered_dict[chart_layout_background_color_enabled]
+                self.state["state"]["layout"]["background_color_enabled"] = (
+                    filtered_dict[chart_layout_background_color_enabled]
+                )
 
         list_chart_layout_background_image_enabled = [True, False] + [None]
         if (
@@ -122226,9 +122226,9 @@ class DetailsMixin:
                 if chart_layout_background_image_enabled in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_enabled"
-                ] = filtered_dict[chart_layout_background_image_enabled]
+                self.state["state"]["layout"]["background_image_enabled"] = (
+                    filtered_dict[chart_layout_background_image_enabled]
+                )
         self.state["state"]["layout"][
             "background_color"
         ] = chart_layout_background_color
@@ -122308,9 +122308,9 @@ class DetailsMixin:
                 if chart_layout_background_image_position in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "background_image_position"
-                ] = filtered_dict[chart_layout_background_image_position]
+                self.state["state"]["layout"]["background_image_position"] = (
+                    filtered_dict[chart_layout_background_image_position]
+                )
 
         list_chart_layout_max_width_target = ["none", "wrapper", "primary"] + [None]
         if chart_layout_max_width_target not in list_chart_layout_max_width_target:
@@ -122449,9 +122449,9 @@ class DetailsMixin:
                 if chart_layout_border_right_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["right"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_right_style]
+                self.state["state"]["layout"]["border"]["right"]["style"] = (
+                    filtered_dict[chart_layout_border_right_style]
+                )
         self.state["state"]["layout"]["border"]["right"][
             "color"
         ] = chart_layout_border_right_color
@@ -122481,9 +122481,9 @@ class DetailsMixin:
                 if chart_layout_border_bottom_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["bottom"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_bottom_style]
+                self.state["state"]["layout"]["border"]["bottom"]["style"] = (
+                    filtered_dict[chart_layout_border_bottom_style]
+                )
         self.state["state"]["layout"]["border"]["bottom"][
             "color"
         ] = chart_layout_border_bottom_color
@@ -122510,9 +122510,9 @@ class DetailsMixin:
                 if chart_layout_border_left_style in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"]["border"]["left"][
-                    "style"
-                ] = filtered_dict[chart_layout_border_left_style]
+                self.state["state"]["layout"]["border"]["left"]["style"] = (
+                    filtered_dict[chart_layout_border_left_style]
+                )
         self.state["state"]["layout"]["border"]["left"][
             "color"
         ] = chart_layout_border_left_color
@@ -122865,9 +122865,9 @@ class DetailsMixin:
                 if chart_layout_header_text_space_above in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_text_space_above"
-                ] = filtered_dict[chart_layout_header_text_space_above]
+                self.state["state"]["layout"]["header_text_space_above"] = (
+                    filtered_dict[chart_layout_header_text_space_above]
+                )
         self.state["state"]["layout"][
             "header_text_space_above_custom"
         ] = chart_layout_header_text_space_above_custom
@@ -123006,9 +123006,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_inside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_inside"
-                ] = filtered_dict[chart_layout_header_logo_position_inside]
+                self.state["state"]["layout"]["header_logo_position_inside"] = (
+                    filtered_dict[chart_layout_header_logo_position_inside]
+                )
 
         list_chart_layout_header_logo_position_outside = ["left", "right"] + [None]
         if (
@@ -123029,9 +123029,9 @@ class DetailsMixin:
                 if chart_layout_header_logo_position_outside in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "header_logo_position_outside"
-                ] = filtered_dict[chart_layout_header_logo_position_outside]
+                self.state["state"]["layout"]["header_logo_position_outside"] = (
+                    filtered_dict[chart_layout_header_logo_position_outside]
+                )
         self.state["state"]["layout"][
             "header_logo_margin_top"
         ] = chart_layout_header_logo_margin_top
@@ -123189,9 +123189,9 @@ class DetailsMixin:
                 if chart_layout_footer_timestamp_format in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "footer_timestamp_format"
-                ] = filtered_dict[chart_layout_footer_timestamp_format]
+                self.state["state"]["layout"]["footer_timestamp_format"] = (
+                    filtered_dict[chart_layout_footer_timestamp_format]
+                )
 
         list_chart_layout_footer_logo_enabled = [True, False] + [None]
         if (
@@ -123379,9 +123379,9 @@ class DetailsMixin:
                 if chart_layout_screenreader_hide_primary in k
             }
             if len(filtered_dict) > 0:
-                self.state["state"]["layout"][
-                    "screenreader_hide_primary"
-                ] = filtered_dict[chart_layout_screenreader_hide_primary]
+                self.state["state"]["layout"]["screenreader_hide_primary"] = (
+                    filtered_dict[chart_layout_screenreader_hide_primary]
+                )
         dict_to_merge = self.state
         clean_dict = clean_null_terms(dict_to_merge)
         self._model_data = deep_merge(self._model_data, clean_dict)

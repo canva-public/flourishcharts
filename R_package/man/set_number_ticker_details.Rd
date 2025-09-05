@@ -463,7 +463,7 @@ Set number ticker chart details
 }
 \examples{
 try(
-  flourish(chart_type = "number_ticker", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  set_number_ticker_details()
+  flourish(chart_type = "number_ticker", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    set_number_ticker_details()
 )
 }

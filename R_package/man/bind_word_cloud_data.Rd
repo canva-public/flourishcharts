@@ -34,7 +34,7 @@ Bind word cloud data
 }
 \examples{
 try(
-  flourish(chart_type = "word_cloud", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_word_cloud_data(gapminder)
+  flourish(chart_type = "word_cloud", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_word_cloud_data(gapminder)
 )
 }

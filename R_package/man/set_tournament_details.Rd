@@ -643,8 +643,8 @@ Set tournament chart details
 }
 \examples{
 try(
-  flourish(chart_type = "tournament", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_tournament_data(gapminder) |> 
-  set_tournament_details()
+  flourish(chart_type = "tournament", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_tournament_data(gapminder) |>
+    set_tournament_details()
 )
 }

@@ -46,7 +46,7 @@ Bind gantt chart data
 }
 \examples{
 try(
-  flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_gantt_data(gapminder)
+  flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_gantt_data(gapminder)
 )
 }

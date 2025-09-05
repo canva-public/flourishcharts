@@ -94,7 +94,7 @@ Bind sankey diagram data
 }
 \examples{
 try(
-  flourish(chart_type = "sankey", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_sankey_data(gapminder)
+  flourish(chart_type = "sankey", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_sankey_data(gapminder)
 )
 }

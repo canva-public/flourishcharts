@@ -9,29 +9,38 @@
 #' @param color_category Color category. Add a category to color participants by. If empty, the name column will be used for colors. Flourish type hint: column
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "sports_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_sports_race_data(gapminder)
+#'   flourish(chart_type = "sports_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_sports_race_data(gapminder)
 #' )
 #' @export
 
 bind_sports_race_data <- function(
-    .,
-    data = NULL,
-    name = NULL,
-    times = NULL,
-    start_image = NULL,
-    race_image = NULL,
-    finish_image = NULL,
-    color_category = NULL) {
+  .,
+  data = NULL,
+  name = NULL,
+  times = NULL,
+  start_image = NULL,
+  race_image = NULL,
+  finish_image = NULL,
+  color_category = NULL
+) {
   bindings_error(., "sports_race")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(data)) {
-    columns_data <- c(paste(name), paste(times), paste(start_image), paste(race_image), paste(finish_image), paste(color_category), NULL)
+    columns_data <- c(
+      paste(name),
+      paste(times),
+      paste(start_image),
+      paste(race_image),
+      paste(finish_image),
+      paste(color_category),
+      NULL
+    )
     columns_data <- columns_data[!sapply(columns_data, is.null)]
     spelling_check_column_names(
       strings = strsplit(columns_data, split = ",", fixed = TRUE),

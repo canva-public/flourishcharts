@@ -796,8 +796,8 @@ Set parliament chart chart details
 }
 \examples{
 try(
-  flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_parliament_chart_data(gapminder) |> 
-  set_parliament_chart_details()
+  flourish(chart_type = "parliament", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_parliament_chart_data(gapminder) |>
+    set_parliament_chart_details()
 )
 }

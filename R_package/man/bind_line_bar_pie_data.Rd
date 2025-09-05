@@ -67,7 +67,7 @@ Bind line, bar and pie charts data
 }
 \examples{
 try(
-  flourish(chart_type = "line", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_line_bar_pie_data(gapminder)
+  flourish(chart_type = "line", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_line_bar_pie_data(gapminder)
 )
 }

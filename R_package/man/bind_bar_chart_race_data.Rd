@@ -97,7 +97,7 @@ Bind bar chart race data
 }
 \examples{
 try(
-  flourish(chart_type = "bar_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_bar_chart_race_data(gapminder)
+  flourish(chart_type = "bar_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_bar_chart_race_data(gapminder)
 )
 }

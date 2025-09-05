@@ -892,8 +892,8 @@ Set table chart details
 }
 \examples{
 try(
-  flourish(chart_type = "table", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_table_data(gapminder) |> 
-  set_table_details()
+  flourish(chart_type = "table", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_table_data(gapminder) |>
+    set_table_details()
 )
 }

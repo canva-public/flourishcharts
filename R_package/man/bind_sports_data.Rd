@@ -103,7 +103,7 @@ Bind sports data
 }
 \examples{
 try(
-  flourish(chart_type = "sports", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_sports_data(gapminder)
+  flourish(chart_type = "sports", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_sports_data(gapminder)
 )
 }

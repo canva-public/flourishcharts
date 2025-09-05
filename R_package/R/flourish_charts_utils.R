@@ -8,11 +8,21 @@ flourish_charts_api_warning <- function(post_call) {
   post_call_ct <- post_call$headers$`content-type`
 
   if (isTRUE(post_call_error) && post_call_ct == "text/html; charset=UTF-8") {
-    return(paste0(post_call_message, ". We currently do not support HTML uploads to Canva."))
-  } else if (isTRUE(post_call_error) && post_call_ct != "text/html; charset=UTF-8") {
-    return(paste0(post_call_message, ". Your image file cannot be uploaded. Please try again."))
+    return(paste0(
+      post_call_message,
+      ". We currently do not support HTML uploads to Canva."
+    ))
+  } else if (
+    isTRUE(post_call_error) && post_call_ct != "text/html; charset=UTF-8"
+  ) {
+    return(paste0(
+      post_call_message,
+      ". Your image file cannot be uploaded. Please try again."
+    ))
   } else if (isFALSE(post_call_error)) {
-    return(paste0("Success! Please go to canva.com / canva.cn and open the flourishcharts Canva content app."))
+    return(paste0(
+      "Success! Please go to canva.com / canva.cn and open the flourishcharts Canva content app."
+    ))
   }
 }
 
@@ -39,15 +49,21 @@ flourish_charts_api_warning_continue <- function(x) {
 #' @param data Dataset to match
 #' @noRd
 
-check_col_names_in_data <- function(strings = NULL,
-                                    data = NULL,
-                                    data_name = NULL) {
+check_col_names_in_data <- function(
+  strings = NULL,
+  data = NULL,
+  data_name = NULL
+) {
   function_args <- list()
   function_args$data <- data
   function_args$strings <- strings
   result <- all(function_args$strings %in% colnames(function_args$data))
   if (isFALSE(result)) {
-    warning(paste0("Your data binding columns do not match the column names in the `", data_name, "` dataset used in this graph. Please double check your spelling."))
+    warning(paste0(
+      "Your data binding columns do not match the column names in the `",
+      data_name,
+      "` dataset used in this graph. Please double check your spelling."
+    ))
   }
 }
 
@@ -57,8 +73,7 @@ check_col_names_in_data <- function(strings = NULL,
 #' @param data Data frame
 #' @noRd
 
-spelling_check_column_names <- function(strings,
-                                        data) {
+spelling_check_column_names <- function(strings, data) {
   strings <- strings
 
   data_name <- deparse(substitute(data))
@@ -91,8 +106,7 @@ deep_merge <- function(list1, list2) {
 #' @param ... Set additional layout parameters
 #' @noRd
 
-flourish_default_layout <- function(chart_description = NULL,
-                                    ...) {
+flourish_default_layout <- function(chart_description = NULL, ...) {
   x <- list()
 
   # accessibility
@@ -108,11 +122,21 @@ flourish_default_layout <- function(chart_description = NULL,
 
 #' Base coalesce helper function
 #' @noRd
-base_coalesce_chart_type <- function(template_version, chart_type_1 = NULL, chart_type_2 = NULL) {
-  if (isTRUE(is.null(chart_type_1) && template_version == "@flourish/line-bar-pie")) {
+base_coalesce_chart_type <- function(
+  template_version,
+  chart_type_1 = NULL,
+  chart_type_2 = NULL
+) {
+  if (
+    isTRUE(
+      is.null(chart_type_1) && template_version == "@flourish/line-bar-pie"
+    )
+  ) {
     chart_type_1 <- "line"
   }
-  if (isTRUE(is.null(chart_type_2) && template_version == "@flourish/hierarchy")) {
+  if (
+    isTRUE(is.null(chart_type_2) && template_version == "@flourish/hierarchy")
+  ) {
     chart_type_2 <- "treemap"
   }
   apply(cbind(chart_type_1, chart_type_2), 1, function(x) {
@@ -135,8 +159,17 @@ base_coalesce <- function(...) {
 #' @noRd
 
 bindings_error <- function(chart, template_function) {
-  if (chart$x$template != paste0("@flourish/", gsub("_", "-", template_function)) && !is.null(chart$x$template)) {
-    stop(paste0("`bind_", template_function, "_data()` is not supported for this chart template: ", chart$x$template))
+  if (
+    chart$x$template !=
+      paste0("@flourish/", gsub("_", "-", template_function)) &&
+      !is.null(chart$x$template)
+  ) {
+    stop(paste0(
+      "`bind_",
+      template_function,
+      "_data()` is not supported for this chart template: ",
+      chart$x$template
+    ))
   }
 }
 
@@ -148,7 +181,16 @@ bindings_error <- function(chart, template_function) {
 #' @noRd
 
 details_error <- function(chart, template_function) {
-  if (chart$x$template != paste0("@flourish/", gsub("_", "-", template_function)) && !is.null(chart$x$template)) {
-    stop(paste0("`set_", template_function, "_details()` is not supported for this chart template: ", chart$x$template))
+  if (
+    chart$x$template !=
+      paste0("@flourish/", gsub("_", "-", template_function)) &&
+      !is.null(chart$x$template)
+  ) {
+    stop(paste0(
+      "`set_",
+      template_function,
+      "_details()` is not supported for this chart template: ",
+      chart$x$template
+    ))
   }
 }

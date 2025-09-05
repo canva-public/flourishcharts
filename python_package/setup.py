@@ -53,7 +53,7 @@ setup_args = dict(
     install_requires=[
         "anywidget==0.7.1",
         "requests==2.32.2",
-        "jupyterlab<=4.0.11",
+        "jupyterlab<=4.2.5",
     ],
     extras_require={
         "test": [

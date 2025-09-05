@@ -18,39 +18,46 @@
 #' @param value_output_format Formats/parses dates, strings, and numbers for the value column. If number: 'comma_point', 'space_point', 'point_comma', 'space_comma', 'none_point', 'none_comma'. Note: column metadata is optional, and the API will interpret your data for you if you do not specify it. A typical example of when specifying metadata can be useful is when column(s) in your data contain numbers or dates that you wish to format visually (e.g. to display a column containing MM/DD/YYYY dates in DD/MM/YYYY format).
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "line", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_line_bar_pie_data(gapminder)
+#'   flourish(chart_type = "line", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_line_bar_pie_data(gapminder)
 #' )
 #' @export
 
-
 bind_line_bar_pie_data <- function(
-    .,
-    data = NULL,
-    label = NULL,
-    value = NULL,
-    facet = NULL,
-    filter = NULL,
-    metadata = NULL,
-    facet_input_format = NULL,
-    facet_output_format = NULL,
-    metadata_input_format = NULL,
-    metadata_output_format = NULL,
-    label_input_format = NULL,
-    label_output_format = NULL,
-    filter_input_format = NULL,
-    filter_output_format = NULL,
-    value_input_format = NULL,
-    value_output_format = NULL) {
+  .,
+  data = NULL,
+  label = NULL,
+  value = NULL,
+  facet = NULL,
+  filter = NULL,
+  metadata = NULL,
+  facet_input_format = NULL,
+  facet_output_format = NULL,
+  metadata_input_format = NULL,
+  metadata_output_format = NULL,
+  label_input_format = NULL,
+  label_output_format = NULL,
+  filter_input_format = NULL,
+  filter_output_format = NULL,
+  value_input_format = NULL,
+  value_output_format = NULL
+) {
   bindings_error(., "line_bar_pie")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(data)) {
-    columns_data <- c(paste(label), paste(value), paste(facet), paste(filter), paste(metadata), NULL)
+    columns_data <- c(
+      paste(label),
+      paste(value),
+      paste(facet),
+      paste(filter),
+      paste(metadata),
+      NULL
+    )
     columns_data <- columns_data[!sapply(columns_data, is.null)]
     spelling_check_column_names(
       strings = strsplit(columns_data, split = ",", fixed = TRUE),
@@ -77,21 +84,43 @@ bind_line_bar_pie_data <- function(
     new_list$x$bindings$data$metadata <- metadata
   }
 
-
-
   if (!is.null(label_output_format) && !is.null(label_input_format)) {
     if (isTRUE(grepl("^%", label_output_format))) {
       new_list$x$metadata$data$label$type <- "datetime"
-      new_list$x$metadata$data$label$type_id <- paste0("datetime$", label_input_format)
-      new_list$x$metadata$data$label$output_format_id <- paste0("datetime$", label_output_format)
+      new_list$x$metadata$data$label$type_id <- paste0(
+        "datetime$",
+        label_input_format
+      )
+      new_list$x$metadata$data$label$output_format_id <- paste0(
+        "datetime$",
+        label_output_format
+      )
     } else if (isTRUE(grepl("_", label_output_format))) {
       new_list$x$metadata$data$label$type <- "number"
-      new_list$x$metadata$data$label$type_id <- paste0("number$", label_input_format)
-      new_list$x$metadata$data$label$output_format_id <- paste0("number$", label_output_format)
-    } else if (isTRUE(!is.na(label_output_format) && isFALSE(grepl("_", label_output_format)) && isFALSE(grepl("^%", label_output_format)))) {
+      new_list$x$metadata$data$label$type_id <- paste0(
+        "number$",
+        label_input_format
+      )
+      new_list$x$metadata$data$label$output_format_id <- paste0(
+        "number$",
+        label_output_format
+      )
+    } else if (
+      isTRUE(
+        !is.na(label_output_format) &&
+          isFALSE(grepl("_", label_output_format)) &&
+          isFALSE(grepl("^%", label_output_format))
+      )
+    ) {
       new_list$x$metadata$data$label$type <- "string"
-      new_list$x$metadata$data$label$type_id <- paste0("string$", label_input_format)
-      new_list$x$metadata$data$label$output_format_id <- paste0("string$", label_output_format)
+      new_list$x$metadata$data$label$type_id <- paste0(
+        "string$",
+        label_input_format
+      )
+      new_list$x$metadata$data$label$output_format_id <- paste0(
+        "string$",
+        label_output_format
+      )
     }
     if (is.na(label_input_format) && !is.na(label_output_format)) {
       "[label_input_format] and [label_output_format] must both be defined."
@@ -101,20 +130,43 @@ bind_line_bar_pie_data <- function(
     }
   }
 
-
   if (!is.null(value_output_format) && !is.null(value_input_format)) {
     if (isTRUE(grepl("^%", value_output_format))) {
       new_list$x$metadata$data$value$type <- "datetime"
-      new_list$x$metadata$data$value$type_id <- paste0("datetime$", value_input_format)
-      new_list$x$metadata$data$value$output_format_id <- paste0("datetime$", value_output_format)
+      new_list$x$metadata$data$value$type_id <- paste0(
+        "datetime$",
+        value_input_format
+      )
+      new_list$x$metadata$data$value$output_format_id <- paste0(
+        "datetime$",
+        value_output_format
+      )
     } else if (isTRUE(grepl("_", value_output_format))) {
       new_list$x$metadata$data$value$type <- "number"
-      new_list$x$metadata$data$value$type_id <- paste0("number$", value_input_format)
-      new_list$x$metadata$data$value$output_format_id <- paste0("number$", value_output_format)
-    } else if (isTRUE(!is.na(value_output_format) && isFALSE(grepl("_", value_output_format)) && isFALSE(grepl("^%", value_output_format)))) {
+      new_list$x$metadata$data$value$type_id <- paste0(
+        "number$",
+        value_input_format
+      )
+      new_list$x$metadata$data$value$output_format_id <- paste0(
+        "number$",
+        value_output_format
+      )
+    } else if (
+      isTRUE(
+        !is.na(value_output_format) &&
+          isFALSE(grepl("_", value_output_format)) &&
+          isFALSE(grepl("^%", value_output_format))
+      )
+    ) {
       new_list$x$metadata$data$value$type <- "string"
-      new_list$x$metadata$data$value$type_id <- paste0("string$", value_input_format)
-      new_list$x$metadata$data$value$output_format_id <- paste0("string$", value_output_format)
+      new_list$x$metadata$data$value$type_id <- paste0(
+        "string$",
+        value_input_format
+      )
+      new_list$x$metadata$data$value$output_format_id <- paste0(
+        "string$",
+        value_output_format
+      )
     }
     if (is.na(value_input_format) && !is.na(value_output_format)) {
       "[value_input_format] and [value_output_format] must both be defined."
@@ -124,20 +176,43 @@ bind_line_bar_pie_data <- function(
     }
   }
 
-
   if (!is.null(facet_output_format) && !is.null(facet_input_format)) {
     if (isTRUE(grepl("^%", facet_output_format))) {
       new_list$x$metadata$data$facet$type <- "datetime"
-      new_list$x$metadata$data$facet$type_id <- paste0("datetime$", facet_input_format)
-      new_list$x$metadata$data$facet$output_format_id <- paste0("datetime$", facet_output_format)
+      new_list$x$metadata$data$facet$type_id <- paste0(
+        "datetime$",
+        facet_input_format
+      )
+      new_list$x$metadata$data$facet$output_format_id <- paste0(
+        "datetime$",
+        facet_output_format
+      )
     } else if (isTRUE(grepl("_", facet_output_format))) {
       new_list$x$metadata$data$facet$type <- "number"
-      new_list$x$metadata$data$facet$type_id <- paste0("number$", facet_input_format)
-      new_list$x$metadata$data$facet$output_format_id <- paste0("number$", facet_output_format)
-    } else if (isTRUE(!is.na(facet_output_format) && isFALSE(grepl("_", facet_output_format)) && isFALSE(grepl("^%", facet_output_format)))) {
+      new_list$x$metadata$data$facet$type_id <- paste0(
+        "number$",
+        facet_input_format
+      )
+      new_list$x$metadata$data$facet$output_format_id <- paste0(
+        "number$",
+        facet_output_format
+      )
+    } else if (
+      isTRUE(
+        !is.na(facet_output_format) &&
+          isFALSE(grepl("_", facet_output_format)) &&
+          isFALSE(grepl("^%", facet_output_format))
+      )
+    ) {
       new_list$x$metadata$data$facet$type <- "string"
-      new_list$x$metadata$data$facet$type_id <- paste0("string$", facet_input_format)
-      new_list$x$metadata$data$facet$output_format_id <- paste0("string$", facet_output_format)
+      new_list$x$metadata$data$facet$type_id <- paste0(
+        "string$",
+        facet_input_format
+      )
+      new_list$x$metadata$data$facet$output_format_id <- paste0(
+        "string$",
+        facet_output_format
+      )
     }
     if (is.na(facet_input_format) && !is.na(facet_output_format)) {
       "[facet_input_format] and [facet_output_format] must both be defined."
@@ -147,20 +222,43 @@ bind_line_bar_pie_data <- function(
     }
   }
 
-
   if (!is.null(filter_output_format) && !is.null(filter_input_format)) {
     if (isTRUE(grepl("^%", filter_output_format))) {
       new_list$x$metadata$data$filter$type <- "datetime"
-      new_list$x$metadata$data$filter$type_id <- paste0("datetime$", filter_input_format)
-      new_list$x$metadata$data$filter$output_format_id <- paste0("datetime$", filter_output_format)
+      new_list$x$metadata$data$filter$type_id <- paste0(
+        "datetime$",
+        filter_input_format
+      )
+      new_list$x$metadata$data$filter$output_format_id <- paste0(
+        "datetime$",
+        filter_output_format
+      )
     } else if (isTRUE(grepl("_", filter_output_format))) {
       new_list$x$metadata$data$filter$type <- "number"
-      new_list$x$metadata$data$filter$type_id <- paste0("number$", filter_input_format)
-      new_list$x$metadata$data$filter$output_format_id <- paste0("number$", filter_output_format)
-    } else if (isTRUE(!is.na(filter_output_format) && isFALSE(grepl("_", filter_output_format)) && isFALSE(grepl("^%", filter_output_format)))) {
+      new_list$x$metadata$data$filter$type_id <- paste0(
+        "number$",
+        filter_input_format
+      )
+      new_list$x$metadata$data$filter$output_format_id <- paste0(
+        "number$",
+        filter_output_format
+      )
+    } else if (
+      isTRUE(
+        !is.na(filter_output_format) &&
+          isFALSE(grepl("_", filter_output_format)) &&
+          isFALSE(grepl("^%", filter_output_format))
+      )
+    ) {
       new_list$x$metadata$data$filter$type <- "string"
-      new_list$x$metadata$data$filter$type_id <- paste0("string$", filter_input_format)
-      new_list$x$metadata$data$filter$output_format_id <- paste0("string$", filter_output_format)
+      new_list$x$metadata$data$filter$type_id <- paste0(
+        "string$",
+        filter_input_format
+      )
+      new_list$x$metadata$data$filter$output_format_id <- paste0(
+        "string$",
+        filter_output_format
+      )
     }
     if (is.na(filter_input_format) && !is.na(filter_output_format)) {
       "[filter_input_format] and [filter_output_format] must both be defined."
@@ -170,20 +268,43 @@ bind_line_bar_pie_data <- function(
     }
   }
 
-
   if (!is.null(metadata_output_format) && !is.null(metadata_input_format)) {
     if (isTRUE(grepl("^%", metadata_output_format))) {
       new_list$x$metadata$data$metadata$type <- "datetime"
-      new_list$x$metadata$data$metadata$type_id <- paste0("datetime$", metadata_input_format)
-      new_list$x$metadata$data$metadata$output_format_id <- paste0("datetime$", metadata_output_format)
+      new_list$x$metadata$data$metadata$type_id <- paste0(
+        "datetime$",
+        metadata_input_format
+      )
+      new_list$x$metadata$data$metadata$output_format_id <- paste0(
+        "datetime$",
+        metadata_output_format
+      )
     } else if (isTRUE(grepl("_", metadata_output_format))) {
       new_list$x$metadata$data$metadata$type <- "number"
-      new_list$x$metadata$data$metadata$type_id <- paste0("number$", metadata_input_format)
-      new_list$x$metadata$data$metadata$output_format_id <- paste0("number$", metadata_output_format)
-    } else if (isTRUE(!is.na(metadata_output_format) && isFALSE(grepl("_", metadata_output_format)) && isFALSE(grepl("^%", metadata_output_format)))) {
+      new_list$x$metadata$data$metadata$type_id <- paste0(
+        "number$",
+        metadata_input_format
+      )
+      new_list$x$metadata$data$metadata$output_format_id <- paste0(
+        "number$",
+        metadata_output_format
+      )
+    } else if (
+      isTRUE(
+        !is.na(metadata_output_format) &&
+          isFALSE(grepl("_", metadata_output_format)) &&
+          isFALSE(grepl("^%", metadata_output_format))
+      )
+    ) {
       new_list$x$metadata$data$metadata$type <- "string"
-      new_list$x$metadata$data$metadata$type_id <- paste0("string$", metadata_input_format)
-      new_list$x$metadata$data$metadata$output_format_id <- paste0("string$", metadata_output_format)
+      new_list$x$metadata$data$metadata$type_id <- paste0(
+        "string$",
+        metadata_input_format
+      )
+      new_list$x$metadata$data$metadata$output_format_id <- paste0(
+        "string$",
+        metadata_output_format
+      )
     }
     if (is.na(metadata_input_format) && !is.na(metadata_output_format)) {
       "[metadata_input_format] and [metadata_output_format] must both be defined."

@@ -563,7 +563,7 @@ Set audio chart details
 \examples{
 try(
   flourish(chart_type = "audio", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_audio_data(gapminder) |>
-  set_audio_details()
+    bind_audio_data(gapminder) |>
+    set_audio_details()
 )
 }

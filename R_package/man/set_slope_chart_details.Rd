@@ -656,7 +656,7 @@ set_slope_chart_details(
 
 \item{filter_show_all}{Include "All". Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{filter_show_all_text}{“All” label. Flourish type hint: string, defaults to \code{NULL}}
+\item{filter_show_all_text}{"All" label. Flourish type hint: string, defaults to \code{NULL}}
 
 \item{chart_controls_style_font_size}{Text size. Flourish type hint: number, defaults to \code{NULL}}
 
@@ -1042,8 +1042,8 @@ Set slope chart chart details
 }
 \examples{
 try(
-  flourish(chart_type = "slope", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_slope_chart_data(gapminder) |> 
-  set_slope_chart_details()
+  flourish(chart_type = "slope", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_slope_chart_data(gapminder) |>
+    set_slope_chart_details()
 )
 }

@@ -6,20 +6,20 @@
 #' @param lines_fixed Lines fixed
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "draw_the_line", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_draw_the_line_data(gapminder)
+#'   flourish(chart_type = "draw_the_line", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_draw_the_line_data(gapminder)
 #' )
 #' @export
 
-
 bind_draw_the_line_data <- function(
-    .,
-    data = NULL,
-    x = NULL,
-    lines_reveal = NULL,
-    lines_fixed = NULL) {
+  .,
+  data = NULL,
+  x = NULL,
+  lines_reveal = NULL,
+  lines_fixed = NULL
+) {
   bindings_error(., "draw_the_line")
 
   old_list <- .
@@ -43,7 +43,6 @@ bind_draw_the_line_data <- function(
   } else {
     new_list$x$bindings$data$lines_reveal <- lines_reveal
   }
-
 
   if (is.null(lines_fixed)) {
     new_list$x$bindings$data$lines_fixed <- "list"

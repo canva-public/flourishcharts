@@ -121,7 +121,7 @@ Bind scatter data
 }
 \examples{
 try(
-  flourish(chart_type = "scatter", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_scatter_data(gapminder)
+  flourish(chart_type = "scatter", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_scatter_data(gapminder)
 )
 }

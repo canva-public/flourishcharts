@@ -9,36 +9,50 @@
 #' @param fallback_value Fallback value. Fallback value to fill the answer input if left empty by the user. Works for all question types but sliders, which will always show the initial value. Flourish type hint: column
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_calculator_data(gapminder)
+#'   flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_calculator_data(gapminder)
 #' )
 #' @export
 
 bind_calculator_data <- function(
-    .,
-    questions_data = NULL,
-    question_text = NULL,
-    question_type = NULL,
-    context_text = NULL,
-    image = NULL,
-    answers_raw = NULL,
-    fallback_value = NULL) {
+  .,
+  questions_data = NULL,
+  question_text = NULL,
+  question_type = NULL,
+  context_text = NULL,
+  image = NULL,
+  answers_raw = NULL,
+  fallback_value = NULL
+) {
   bindings_error(., "calculator")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(questions_data)) {
-    columns_questions_data <- c(paste(question_text), paste(question_type), paste(context_text), paste(image), paste(answers_raw), paste(fallback_value), NULL)
-    columns_questions_data <- columns_questions_data[!sapply(columns_questions_data, is.null)]
+    columns_questions_data <- c(
+      paste(question_text),
+      paste(question_type),
+      paste(context_text),
+      paste(image),
+      paste(answers_raw),
+      paste(fallback_value),
+      NULL
+    )
+    columns_questions_data <- columns_questions_data[
+      !sapply(columns_questions_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_questions_data, split = ",", fixed = TRUE),
       data = questions_data
     )
     int_columns_questions_data <- sapply(questions_data, is.integer)
-    questions_data[, int_columns_questions_data] <- lapply(questions_data[, int_columns_questions_data], as.character)
+    questions_data[, int_columns_questions_data] <- lapply(
+      questions_data[, int_columns_questions_data],
+      as.character
+    )
   }
   new_list$x$data$questions <- questions_data
   new_list$x$bindings$questions$question_text <- question_text

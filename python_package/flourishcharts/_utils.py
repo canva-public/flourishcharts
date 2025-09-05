@@ -60,10 +60,16 @@ def details_error(self):
     :raises Exception: Throws an Exception stating that the function cannot be applied, highlighting the correct function to use instead.
     """
     _internal_templates = load_internal_templates()
-    if self.template_id == "@flourish/line-bar-pie" and self.base_visualisation_id is not None:
+    if (
+        self.template_id == "@flourish/line-bar-pie"
+        and self.base_visualisation_id is not None
+    ):
         self.chart_type = self.base_state["chart_type"]
         self.template = self.template_id
-    if  self.template_id == "@flourish/hierarchy" and self.base_visualisation_id is not None:
+    if (
+        self.template_id == "@flourish/hierarchy"
+        and self.base_visualisation_id is not None
+    ):
         self.chart_type = self.base_state["hierarchy_layout"]
         self.template = self.template_id
     matched_templates = _internal_templates[
@@ -85,10 +91,16 @@ def bindings_error(self):
     :raises Exception: Throws an Exception stating that the binding function cannot be applied, highlighting the correct function to use instead.
     """
     _internal_templates = load_internal_templates()
-    if self.template_id == "@flourish/line-bar-pie" and self.base_visualisation_id is not None:
+    if (
+        self.template_id == "@flourish/line-bar-pie"
+        and self.base_visualisation_id is not None
+    ):
         self.chart_type = self.base_state["chart_type"]
         self.template = self.template_id
-    if  self.template_id == "@flourish/hierarchy" and self.base_visualisation_id is not None:
+    if (
+        self.template_id == "@flourish/hierarchy"
+        and self.base_visualisation_id is not None
+    ):
         self.chart_type = self.base_state["hierarchy_layout"]
         self.template = self.template_id
     matched_templates = _internal_templates[

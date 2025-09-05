@@ -94,7 +94,7 @@ Bind timeline data
 }
 \examples{
 try(
-  flourish(chart_type = "timeline", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_timeline_data(gapminder)
+  flourish(chart_type = "timeline", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_timeline_data(gapminder)
 )
 }

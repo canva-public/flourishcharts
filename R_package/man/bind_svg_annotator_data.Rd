@@ -43,7 +43,7 @@ Bind svg annotator data
 }
 \examples{
 try(
-  flourish(chart_type = "svg_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_svg_annotator_data(gapminder)
+  flourish(chart_type = "svg_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_svg_annotator_data(gapminder)
 )
 }

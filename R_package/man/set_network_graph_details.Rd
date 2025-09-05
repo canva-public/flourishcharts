@@ -730,8 +730,8 @@ Set network graph chart details
 }
 \examples{
 try(
-  flourish(chart_type = "network", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_network_graph_data(gapminder) |> 
-  set_network_graph_details()
+  flourish(chart_type = "network", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_network_graph_data(gapminder) |>
+    set_network_graph_details()
 )
 }

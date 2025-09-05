@@ -16,7 +16,7 @@ flourish(
 \arguments{
 \item{chart_type}{Required - a chart type string for each graph in Flourish's library. Preferred usage compared to \code{template_id} and \code{template_version}.}
 
-\item{chart_description}{Optional - a screen-reader description. A text alternative to the visual content that will only be visible to screen-readers, e.g. “The line chart shows China consistently higher than the other countries since 1990”. Do no replicate your title, since that will also be read by screenreaders.}
+\item{chart_description}{Optional - a screen-reader description. A text alternative to the visual content that will only be visible to screen-readers, e.g. <U+201C>The line chart shows China consistently higher than the other countries since 1990<U+201D>. Do no replicate your title, since that will also be read by screenreaders.}
 
 \item{base_visualisation_id}{Optional - provide the numerical ID of an existing public (published) Flourish visualisation to reference it's configuration}
 
@@ -36,10 +36,10 @@ Create a graph using Flourish's API (https://developers.flourish.studio/api/intr
 try(
   flourish(
     chart_type = "scatter", api_key = Sys.getenv("FLOURISH_API_KEY")
-  ) |> 
-  bind_scatter_data(
-    data = subset(gapminder, year == 2007), 
-    y = "gdpPercap", x = "lifeExp"
-  )
- )
+  ) |>
+    bind_scatter_data(
+      data = subset(gapminder, year == 2007),
+      y = "gdpPercap", x = "lifeExp"
+    )
+)
 }

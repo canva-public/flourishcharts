@@ -107,6 +107,6 @@ Bind line chart race data
 \examples{
 try(
   flourish(chart_type = "horserace", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_horserace_data(gapminder)
+    bind_horserace_data(gapminder)
 )
 }

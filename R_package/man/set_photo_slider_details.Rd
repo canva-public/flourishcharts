@@ -443,6 +443,6 @@ Set photo slider chart details
 \examples{
 try(
   flourish(chart_type = "photo_slider", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  set_photo_slider_details()
+    set_photo_slider_details()
 )
 }

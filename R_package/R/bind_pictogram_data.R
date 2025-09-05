@@ -14,35 +14,43 @@
 #' @param icons_height Icon height. Icon height (in pixels). Flourish type hint: column
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "pictogram", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_pictogram_data(gapminder)
+#'   flourish(chart_type = "pictogram", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_pictogram_data(gapminder)
 #' )
 #' @export
 
-
 bind_pictogram_data <- function(
-    .,
-    data = NULL,
-    icons_data = NULL,
-    main_category = NULL,
-    sub_category = NULL,
-    values = NULL,
-    icon_id = NULL,
-    color = NULL,
-    metadata = NULL,
-    icons_id = NULL,
-    icons_path_string = NULL,
-    icons_width = NULL,
-    icons_height = NULL) {
+  .,
+  data = NULL,
+  icons_data = NULL,
+  main_category = NULL,
+  sub_category = NULL,
+  values = NULL,
+  icon_id = NULL,
+  color = NULL,
+  metadata = NULL,
+  icons_id = NULL,
+  icons_path_string = NULL,
+  icons_width = NULL,
+  icons_height = NULL
+) {
   bindings_error(., "pictogram")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(data)) {
-    columns_data <- c(paste(main_category), paste(sub_category), paste(values), paste(icon_id), paste(color), paste(metadata), NULL)
+    columns_data <- c(
+      paste(main_category),
+      paste(sub_category),
+      paste(values),
+      paste(icon_id),
+      paste(color),
+      paste(metadata),
+      NULL
+    )
     columns_data <- columns_data[!sapply(columns_data, is.null)]
     spelling_check_column_names(
       strings = strsplit(columns_data, split = ",", fixed = TRUE),
@@ -52,14 +60,25 @@ bind_pictogram_data <- function(
     data[, int_columns_data] <- lapply(data[, int_columns_data], as.character)
   }
   if (!is.null(icons_data)) {
-    columns_icons_data <- c(paste(icons_id), paste(icons_path_string), paste(icons_width), paste(icons_height), NULL)
-    columns_icons_data <- columns_icons_data[!sapply(columns_icons_data, is.null)]
+    columns_icons_data <- c(
+      paste(icons_id),
+      paste(icons_path_string),
+      paste(icons_width),
+      paste(icons_height),
+      NULL
+    )
+    columns_icons_data <- columns_icons_data[
+      !sapply(columns_icons_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_icons_data, split = ",", fixed = TRUE),
       data = icons_data
     )
     int_columns_icons_data <- sapply(icons_data, is.integer)
-    icons_data[, int_columns_icons_data] <- lapply(icons_data[, int_columns_icons_data], as.character)
+    icons_data[, int_columns_icons_data] <- lapply(
+      icons_data[, int_columns_icons_data],
+      as.character
+    )
   }
   new_list$x$data$data <- data
   new_list$x$data$icons <- icons_data

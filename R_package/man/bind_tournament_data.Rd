@@ -103,7 +103,7 @@ Bind tournament data
 }
 \examples{
 try(
-  flourish(chart_type = "tournament", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_tournament_data(gapminder)
+  flourish(chart_type = "tournament", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_tournament_data(gapminder)
 )
 }

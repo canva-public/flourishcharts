@@ -910,8 +910,8 @@ Set election results chart chart details
 }
 \examples{
 try(
-  flourish(chart_type = "election_results", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_election_results_chart_data(gapminder) |> 
-  set_election_results_chart_details()
+  flourish(chart_type = "election_results", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_election_results_chart_data(gapminder) |>
+    set_election_results_chart_details()
 )
 }

@@ -979,8 +979,8 @@ Set sports chart details
 }
 \examples{
 try(
-  flourish(chart_type = "sports", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_sports_data(gapminder) |> 
-  set_sports_details()
+  flourish(chart_type = "sports", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_sports_data(gapminder) |>
+    set_sports_details()
 )
 }

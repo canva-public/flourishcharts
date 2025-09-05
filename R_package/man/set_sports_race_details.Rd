@@ -710,7 +710,7 @@ Set sports race chart details
 \examples{
 try(
   flourish(chart_type = "sports_race", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_sports_race_data(gapminder) |>
-  set_sports_race_details()
+    bind_sports_race_data(gapminder) |>
+    set_sports_race_details()
 )
 }

@@ -563,7 +563,7 @@ Set svg annotator chart details
 \examples{
 try(
   flourish(chart_type = "svg_annotator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
-  bind_svg_annotator_data(gapminder) |>
-  set_svg_annotator_details()
+    bind_svg_annotator_data(gapminder) |>
+    set_svg_annotator_details()
 )
 }

@@ -28,105 +28,165 @@
 #' @param answer_groups_affirmative_answers Answers to include. The respondent is included in the group if their answer to the question is one of the answers listed in these columns. Flourish type hint: columns
 #' @param . The prior Flourish object. No need to specify name if piping graph as the graph will take the first argument (i.e. the prior existing graph).
 #' @return A Flourish chart
-#' @examples 
+#' @examples
 #' try(
-#'   flourish(chart_type = "survey", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-#'   bind_survey_data(gapminder)
+#'   flourish(chart_type = "survey", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+#'     bind_survey_data(gapminder)
 #' )
 #' @export
 
 bind_survey_data <- function(
-    .,
-    questions_data = NULL,
-    order_data = NULL,
-    labels_data = NULL,
-    colors_data = NULL,
-    places_data = NULL,
-    answer_groups_data = NULL,
-    questions_categorical = NULL,
-    questions_continuous = NULL,
-    questions_geo = NULL,
-    questions_label = NULL,
-    questions_column_filter = NULL,
-    questions_id = NULL,
-    questions_metadata = NULL,
-    order_categories = NULL,
-    labels_label = NULL,
-    labels_replacement = NULL,
-    colors_question = NULL,
-    colors_answer = NULL,
-    colors_color = NULL,
-    places_latitude = NULL,
-    places_longitude = NULL,
-    places_names = NULL,
-    answer_groups_group = NULL,
-    answer_groups_question = NULL,
-    answer_groups_display_as = NULL,
-    answer_groups_affirmative_answers = NULL) {
+  .,
+  questions_data = NULL,
+  order_data = NULL,
+  labels_data = NULL,
+  colors_data = NULL,
+  places_data = NULL,
+  answer_groups_data = NULL,
+  questions_categorical = NULL,
+  questions_continuous = NULL,
+  questions_geo = NULL,
+  questions_label = NULL,
+  questions_column_filter = NULL,
+  questions_id = NULL,
+  questions_metadata = NULL,
+  order_categories = NULL,
+  labels_label = NULL,
+  labels_replacement = NULL,
+  colors_question = NULL,
+  colors_answer = NULL,
+  colors_color = NULL,
+  places_latitude = NULL,
+  places_longitude = NULL,
+  places_names = NULL,
+  answer_groups_group = NULL,
+  answer_groups_question = NULL,
+  answer_groups_display_as = NULL,
+  answer_groups_affirmative_answers = NULL
+) {
   bindings_error(., "survey")
 
   old_list <- .
   new_list <- list()
 
   if (!is.null(questions_data)) {
-    columns_questions_data <- c(paste(questions_categorical), paste(questions_continuous), paste(questions_geo), paste(questions_label), paste(questions_column_filter), paste(questions_id), paste(questions_metadata), NULL)
-    columns_questions_data <- columns_questions_data[!sapply(columns_questions_data, is.null)]
+    columns_questions_data <- c(
+      paste(questions_categorical),
+      paste(questions_continuous),
+      paste(questions_geo),
+      paste(questions_label),
+      paste(questions_column_filter),
+      paste(questions_id),
+      paste(questions_metadata),
+      NULL
+    )
+    columns_questions_data <- columns_questions_data[
+      !sapply(columns_questions_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_questions_data, split = ",", fixed = TRUE),
       data = questions_data
     )
     int_columns_questions_data <- sapply(questions_data, is.integer)
-    questions_data[, int_columns_questions_data] <- lapply(questions_data[, int_columns_questions_data], as.character)
+    questions_data[, int_columns_questions_data] <- lapply(
+      questions_data[, int_columns_questions_data],
+      as.character
+    )
   }
   if (!is.null(order_data)) {
     columns_order_data <- c(paste(order_categories), NULL)
-    columns_order_data <- columns_order_data[!sapply(columns_order_data, is.null)]
+    columns_order_data <- columns_order_data[
+      !sapply(columns_order_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_order_data, split = ",", fixed = TRUE),
       data = order_data
     )
     int_columns_order_data <- sapply(order_data, is.integer)
-    order_data[, int_columns_order_data] <- lapply(order_data[, int_columns_order_data], as.character)
+    order_data[, int_columns_order_data] <- lapply(
+      order_data[, int_columns_order_data],
+      as.character
+    )
   }
   if (!is.null(labels_data)) {
-    columns_labels_data <- c(paste(labels_label), paste(labels_replacement), NULL)
-    columns_labels_data <- columns_labels_data[!sapply(columns_labels_data, is.null)]
+    columns_labels_data <- c(
+      paste(labels_label),
+      paste(labels_replacement),
+      NULL
+    )
+    columns_labels_data <- columns_labels_data[
+      !sapply(columns_labels_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_labels_data, split = ",", fixed = TRUE),
       data = labels_data
     )
     int_columns_labels_data <- sapply(labels_data, is.integer)
-    labels_data[, int_columns_labels_data] <- lapply(labels_data[, int_columns_labels_data], as.character)
+    labels_data[, int_columns_labels_data] <- lapply(
+      labels_data[, int_columns_labels_data],
+      as.character
+    )
   }
   if (!is.null(colors_data)) {
-    columns_colors_data <- c(paste(colors_question), paste(colors_answer), paste(colors_color), NULL)
-    columns_colors_data <- columns_colors_data[!sapply(columns_colors_data, is.null)]
+    columns_colors_data <- c(
+      paste(colors_question),
+      paste(colors_answer),
+      paste(colors_color),
+      NULL
+    )
+    columns_colors_data <- columns_colors_data[
+      !sapply(columns_colors_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_colors_data, split = ",", fixed = TRUE),
       data = colors_data
     )
     int_columns_colors_data <- sapply(colors_data, is.integer)
-    colors_data[, int_columns_colors_data] <- lapply(colors_data[, int_columns_colors_data], as.character)
+    colors_data[, int_columns_colors_data] <- lapply(
+      colors_data[, int_columns_colors_data],
+      as.character
+    )
   }
   if (!is.null(places_data)) {
-    columns_places_data <- c(paste(places_latitude), paste(places_longitude), paste(places_names), NULL)
-    columns_places_data <- columns_places_data[!sapply(columns_places_data, is.null)]
+    columns_places_data <- c(
+      paste(places_latitude),
+      paste(places_longitude),
+      paste(places_names),
+      NULL
+    )
+    columns_places_data <- columns_places_data[
+      !sapply(columns_places_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_places_data, split = ",", fixed = TRUE),
       data = places_data
     )
     int_columns_places_data <- sapply(places_data, is.integer)
-    places_data[, int_columns_places_data] <- lapply(places_data[, int_columns_places_data], as.character)
+    places_data[, int_columns_places_data] <- lapply(
+      places_data[, int_columns_places_data],
+      as.character
+    )
   }
   if (!is.null(answer_groups_data)) {
-    columns_answer_groups_data <- c(paste(answer_groups_group), paste(answer_groups_question), paste(answer_groups_display_as), paste(answer_groups_affirmative_answers), NULL)
-    columns_answer_groups_data <- columns_answer_groups_data[!sapply(columns_answer_groups_data, is.null)]
+    columns_answer_groups_data <- c(
+      paste(answer_groups_group),
+      paste(answer_groups_question),
+      paste(answer_groups_display_as),
+      paste(answer_groups_affirmative_answers),
+      NULL
+    )
+    columns_answer_groups_data <- columns_answer_groups_data[
+      !sapply(columns_answer_groups_data, is.null)
+    ]
     spelling_check_column_names(
       strings = strsplit(columns_answer_groups_data, split = ",", fixed = TRUE),
       data = answer_groups_data
     )
     int_columns_answer_groups_data <- sapply(answer_groups_data, is.integer)
-    answer_groups_data[, int_columns_answer_groups_data] <- lapply(answer_groups_data[, int_columns_answer_groups_data], as.character)
+    answer_groups_data[, int_columns_answer_groups_data] <- lapply(
+      answer_groups_data[, int_columns_answer_groups_data],
+      as.character
+    )
   }
   new_list$x$data$questions <- questions_data
   new_list$x$data$order <- order_data
@@ -141,13 +201,11 @@ bind_survey_data <- function(
     new_list$x$bindings$questions$categorical <- questions_categorical
   }
 
-
   if (is.null(questions_continuous)) {
     new_list$x$bindings$questions$continuous <- "list"
   } else {
     new_list$x$bindings$questions$continuous <- questions_continuous
   }
-
 
   if (is.null(questions_geo)) {
     new_list$x$bindings$questions$geo <- "list"
@@ -164,7 +222,6 @@ bind_survey_data <- function(
   } else {
     new_list$x$bindings$questions$metadata <- questions_metadata
   }
-
 
   if (is.null(order_categories)) {
     new_list$x$bindings$order$categories <- "list"

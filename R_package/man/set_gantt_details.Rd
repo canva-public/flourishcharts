@@ -866,7 +866,7 @@ set_gantt_details(
 
 \item{chart_axes_highlights_x_enabled}{Show highlights on the x axis. Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{chart_axes_highlights_x_lines}{One per line, in format “My label :: 2012”. One per line, using the  format :  My label :: 2012  For dates, use the  input format  as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart. Use the format:  \verb{My label :: 2012 :: line_color / text_color :: facet_name}.  For example,  \verb{My label :: 2012 :: #eb0000 / #0084bd :: Category 1}. If you want to add an annotation to just one specific chart but do not want to color the line/text, you can leave that part blank. For example:  My label :: 2012 :: :: Category 1 Flourish type hint: text, defaults to \code{NULL}}
+\item{chart_axes_highlights_x_lines}{One per line, in format "My label :: 2012". One per line, using the  format :  My label :: 2012  For dates, use the  input format  as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart. Use the format:  \verb{My label :: 2012 :: line_color / text_color :: facet_name}.  For example,  \verb{My label :: 2012 :: #eb0000 / #0084bd :: Category 1}. If you want to add an annotation to just one specific chart but do not want to color the line/text, you can leave that part blank. For example:  My label :: 2012 :: :: Category 1 Flourish type hint: text, defaults to \code{NULL}}
 
 \item{chart_axes_highlights_x_line_color}{Line color. Flourish type hint: color, defaults to \code{NULL}}
 
@@ -874,7 +874,7 @@ set_gantt_details(
 
 \item{chart_axes_highlights_x_line_dash}{Dash. Flourish type hint: number, defaults to \code{NULL}}
 
-\item{chart_axes_highlights_x_areas}{One per line, in format “My label :: 2013 >> 2015”. One per line, using the format :  My label :: date >> date  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  My label :: 2012 :: area_color / text_color :: facet_name For example,  \verb{My label :: 2012 >> 2015 :: #eb0000 / #0084bd :: Category 1}. Flourish type hint: text, defaults to \code{NULL}}
+\item{chart_axes_highlights_x_areas}{One per line, in format "My label :: 2013 >> 2015". One per line, using the format :  My label :: date >> date  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  My label :: 2012 :: area_color / text_color :: facet_name For example,  \verb{My label :: 2012 >> 2015 :: #eb0000 / #0084bd :: Category 1}. Flourish type hint: text, defaults to \code{NULL}}
 
 \item{chart_axes_highlights_x_area_color}{Area. Flourish type hint: color, defaults to \code{NULL}}
 
@@ -902,7 +902,7 @@ set_gantt_details(
 
 \item{chart_axes_highlights_y_enabled}{Show highlights on the y axis. Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{chart_axes_highlights_y_lines}{One per line, in format “My label :: 5000”. One per line, using the format :  My label :: 2012  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  \verb{My label :: 2012 :: line_color / text_color :: facet_name}.  For example:  \verb{My label :: 2012 :: #eb0000 / #0084bd :: Category 1}.  If you want to add an annotation to just one specific chart but do not want to color the line/text, you can leave that part blank. For example:  My label :: 2012 :: :: Category 1 Flourish type hint: text, defaults to \code{NULL}}
+\item{chart_axes_highlights_y_lines}{One per line, in format "My label :: 5000". One per line, using the format :  My label :: 2012  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  \verb{My label :: 2012 :: line_color / text_color :: facet_name}.  For example:  \verb{My label :: 2012 :: #eb0000 / #0084bd :: Category 1}.  If you want to add an annotation to just one specific chart but do not want to color the line/text, you can leave that part blank. For example:  My label :: 2012 :: :: Category 1 Flourish type hint: text, defaults to \code{NULL}}
 
 \item{chart_axes_highlights_y_line_color}{Line color. Flourish type hint: color, defaults to \code{NULL}}
 
@@ -910,7 +910,7 @@ set_gantt_details(
 
 \item{chart_axes_highlights_y_line_dash}{Dash. Flourish type hint: number, defaults to \code{NULL}}
 
-\item{chart_axes_highlights_y_areas}{One per line, in format “My label :: 2000 >> 8000”. One per line, using the format :  My label :: date >> date  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  My label :: 2012 :: area_color / text_color :: facet_name  For example:  \verb{My label :: 2012 >> 2015 :: #eb0000 / #0084bd :: Category 1}. Flourish type hint: text, defaults to \code{NULL}}
+\item{chart_axes_highlights_y_areas}{One per line, in format "My label :: 2000 >> 8000". One per line, using the format :  My label :: date >> date  For dates, use the input format as specified in the datasheet. You can optionally specify a line color and a text color For visualizations using a  grid of charts , you can apply the annotation only on a specific chart Use the format:  My label :: 2012 :: area_color / text_color :: facet_name  For example:  \verb{My label :: 2012 >> 2015 :: #eb0000 / #0084bd :: Category 1}. Flourish type hint: text, defaults to \code{NULL}}
 
 \item{chart_axes_highlights_y_area_color}{Area. Flourish type hint: color, defaults to \code{NULL}}
 
@@ -1192,8 +1192,8 @@ Set gantt chart chart details
 }
 \examples{
 try(
-  flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_gantt_data(gapminder) |> 
-  set_gantt_details()
+  flourish(chart_type = "gantt", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_gantt_data(gapminder) |>
+    set_gantt_details()
 )
 }

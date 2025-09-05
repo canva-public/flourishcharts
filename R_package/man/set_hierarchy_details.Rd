@@ -1078,8 +1078,8 @@ Set hierarchy chart details
 }
 \examples{
 try(
-  flourish(chart_type = "treemap", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_hierarchy_data(gapminder) |> 
-  set_hierarchy_details()
+  flourish(chart_type = "treemap", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_hierarchy_data(gapminder) |>
+    set_hierarchy_details()
 )
 }

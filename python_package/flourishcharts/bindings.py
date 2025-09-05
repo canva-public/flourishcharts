@@ -1578,9 +1578,9 @@ class DataBindingsMixin:
             int_columns_values_historical_data = values_historical_data.select_dtypes(
                 include="int"
             ).columns
-            values_historical_data[
-                int_columns_values_historical_data
-            ] = values_historical_data[int_columns_values_historical_data].astype(str)
+            values_historical_data[int_columns_values_historical_data] = (
+                values_historical_data[int_columns_values_historical_data].astype(str)
+            )
             self.data_properties["values_historical"] = values_historical_data.to_dict(
                 orient="records"
             )

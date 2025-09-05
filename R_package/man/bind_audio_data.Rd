@@ -58,7 +58,7 @@ Bind audio data
 }
 \examples{
 try(
-  flourish(chart_type = "audio", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_audio_data(gapminder)
+  flourish(chart_type = "audio", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_audio_data(gapminder)
 )
 }

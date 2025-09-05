@@ -450,15 +450,15 @@ set_horserace_details(
 
 \item{chart_filter_controls_sort}{Sorting. Choices: \code{TRUE}, \code{FALSE}. Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{filter_include_all}{Include “All” option. Flourish type hint: boolean, defaults to \code{NULL}}
+\item{filter_include_all}{Include "All" option. Flourish type hint: boolean, defaults to \code{NULL}}
 
-\item{label_ranks}{“Ranks”. Flourish type hint: string, defaults to \code{NULL}}
+\item{label_ranks}{"Ranks". Flourish type hint: string, defaults to \code{NULL}}
 
-\item{label_scores}{“Scores”. Flourish type hint: string, defaults to \code{NULL}}
+\item{label_scores}{"Scores". Flourish type hint: string, defaults to \code{NULL}}
 
-\item{label_replay}{“Replay”. Flourish type hint: string, defaults to \code{NULL}}
+\item{label_replay}{"Replay". Flourish type hint: string, defaults to \code{NULL}}
 
-\item{filter_all_label}{“All”. Flourish type hint: string, defaults to \code{NULL}}
+\item{filter_all_label}{"All". Flourish type hint: string, defaults to \code{NULL}}
 
 \item{chart_controls_style_font_size}{Text size. Flourish type hint: number, defaults to \code{NULL}}
 
@@ -1144,8 +1144,8 @@ Set line chart race chart details
 }
 \examples{
 try(
-  flourish(chart_type = "horserace", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_horserace_data(gapminder) |> 
-  set_horserace_details()
+  flourish(chart_type = "horserace", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_horserace_data(gapminder) |>
+    set_horserace_details()
 )
 }

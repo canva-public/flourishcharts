@@ -1051,8 +1051,8 @@ Set survey chart details
 }
 \examples{
 try(
-  flourish(chart_type = "survey", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_survey_data(gapminder) |> 
-  set_survey_details()
+  flourish(chart_type = "survey", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_survey_data(gapminder) |>
+    set_survey_details()
 )
 }

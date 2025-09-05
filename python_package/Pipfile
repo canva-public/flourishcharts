@@ -7,7 +7,7 @@ name = "pypi"
 anywidget = "*"
 pandas = "*"
 jupyterlab = "*"
-flourishcharts = {subdirectory = "python_package", ref = "main", git = "https://github.com/canva-public/flourishcharts"}
+flourishcharts = {subdirectory = "python_package", ref = "main", git = "ssh://git@github.com/canva/flourish-charts"}
 
 [dev-packages]
 black = "*"
@@ -20,3 +20,4 @@ jinja2 = "*"
 loguru = "*"
 pathlib = "*"
 numpy = "*"
+flourishcharts = {editable = true, subdirectory = "python_package", ref = "main", git = "ssh://git@github.com/canva/flourish-charts"}

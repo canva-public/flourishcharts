@@ -1063,8 +1063,8 @@ Set calculator chart details
 }
 \examples{
 try(
-  flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_calculator_data(gapminder) |> 
-  set_calculator_details()
+  flourish(chart_type = "calculator", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_calculator_data(gapminder) |>
+    set_calculator_details()
 )
 }

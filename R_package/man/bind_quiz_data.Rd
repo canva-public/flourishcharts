@@ -67,7 +67,7 @@ Bind quiz data
 }
 \examples{
 try(
-  flourish(chart_type = "quiz", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_quiz_data(gapminder)
+  flourish(chart_type = "quiz", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_quiz_data(gapminder)
 )
 }

@@ -94,7 +94,7 @@ Bind cards data
 }
 \examples{
 try(
-  flourish(chart_type = "cards", api_key = Sys.getenv("FLOURISH_API_KEY")) |> 
-  bind_cards_data(gapminder)
+  flourish(chart_type = "cards", api_key = Sys.getenv("FLOURISH_API_KEY")) |>
+    bind_cards_data(gapminder)
 )
 }
