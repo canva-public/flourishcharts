@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "flourishcharts"
-version = "1.5.3.5"
+version = "1.6.5.8"
 dependencies = [ "anywidget", "requests", "pandas",]
 readme = "README.md"
 [[project.authors]]

@@ -105,6 +105,16 @@ HTMLWidgets.widget({
         flourish_visualisation = new Fleet(opts);
         if (x.base_visualisation_id && !flourish_visualisation.template_loaded){
           flourish_visualisation.template_loaded = true
+        };
+        if (x.state.snapshot) {
+          var snapshot_options = x.state.snapshot;
+          flourish_visualisation.snapshot(snapshot_options, function (error, data) {
+            if (error) {
+                console.error(error);
+                return;
+            }
+            console.log(data.data); // "data:image/jpeg;base64,..."
+          });
         }
       },
       resize: function (width, height) {
