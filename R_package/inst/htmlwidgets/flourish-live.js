@@ -82,23 +82,13 @@ HTMLWidgets.widget({
         // https://github.com/rstudio/rstudio/issues/12494
         // https://github.com/rstudio/rstudio/issues/12620
         // https://github.com/rstudio/rstudio/pull/12706
-        var embedding = {
+        // Note: embedding functions are internal to flourish-live library,
+        // so we only override createEmbedIframe which is what we need for the RStudio hack
+        window.embedding = {
           createEmbedIframe: () => {
             return document.getElementById(x.chart_id)
-          },
-          isFixedHeight: isFixedHeight,
-          getHeightForBreakpoint: getHeightForBreakpoint,
-          startEventListeners: startEventListeners,
-          notifyParentWindow: notifyParentWindow,
-          initScrolly: initScrolly,
-          createScrolly: createScrolly,
-          isSafari: isSafari,
-          initCustomerAnalytics: initCustomerAnalytics,
-          addAnalyticsListener: addAnalyticsListener,
-          sendCustomerAnalyticsMessage: sendCustomerAnalyticsMessage
+          }
         };
-        // comment out the following line to disable the rstudio hack
-        window.embedding = embedding;
         // set the default html widget container height to 0.
         var container_div_id = opts.container.substring(1);
         document.getElementById(container_div_id).style.height = "0px";
