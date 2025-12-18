@@ -15,14 +15,6 @@ function render({ model, el }: RenderContext<WidgetModel>) {
 	chart.id = "chart";
 	el.appendChild(chart);
 	let opts = model.get("_model_data");
-	if (opts.template_id == '@flourish/hierarchy') {
-		if (opts.chart_type == 'circlepacking'){
-			opts.chart_type = 'circlePacking'
-		}
-		if (ops.chart_type == 'radialtree'){
-			opts.chart_type = 'radialTree'
-		}
-	}
 	if (opts.base_visualisation_id) {
 		// base_visualisation_data_format can now be an array of arrays or array of objects as v5.0.2 of the API.
 		opts.base_visualisation_id = String(opts.base_visualisation_id)
@@ -39,10 +31,27 @@ function render({ model, el }: RenderContext<WidgetModel>) {
 	  if(opts.metadata !== null || typeof opts.metadata !== 'undefined'){
 		opts.metadata = opts.metadata || opts.base_metadata
 	};
+	if (opts.template == '@flourish/hierarchy') {
+		if (opts.state.hierarchy_layout == 'circlepacking'){
+			opts.state.hierarchy_layout = 'circlePacking'
+		}
+		if (opts.state.hierarchy_layout == 'radialtree'){
+			opts.state.hierarchy_layout = 'radialTree'
+		}
+	}
 	opts.container = chart
-	flourish_visualisation = new flourishliveApi.Live(opts);
+	var flourish_visualisation = new flourishliveApi.Live(opts);
 	if (opts.base_visualisation_id && !flourish_visualisation.template_loaded){
 	  flourish_visualisation.template_loaded = true
+	}
+	if (opts.snapshot.snapshot_flag){
+		var snapshot_options = opts.snapshot.snapshot_metadata
+		flourish_visualisation.snapshot(snapshot_options, function (error, data) {
+			if (error) {
+				console.error(error);
+				return;
+			}
+		})
 	}
 }
 export default { render }

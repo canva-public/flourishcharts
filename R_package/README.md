@@ -16,6 +16,24 @@ install.packages("flourishcharts")
 library(flourishcharts)
 ```
 
+## Updating flourish-live.js
+
+When updating `inst/htmlwidgets/lib/flourish-live/flourish-live-X.X.X.js`, you must apply this patch to the `Fleet.prototype._loadFleet` function:
+
+```javascript
+// Change this line:
+if (!embedding) { embedding = initEmbedding(); }
+
+// To this:
+if (!embedding) { embedding = window.embedding || initEmbedding(); }
+```
+
+This patch allows the R package to override `createEmbedIframe` and `startEventListeners` via `window.embedding` in `flourish-live.js`. This is required to work around RStudio security restrictions that block dynamically created iframes.
+
+See:
+- https://github.com/rstudio/rstudio/issues/12494
+- https://github.com/rstudio/rstudio/issues/12620
+
 ## Issues
 
 Please note any issues in the GitHub repository.

@@ -1,6 +1,6 @@
 Package: flourishcharts
 Title: 'Flourish' for 'R' and 'Python'
-Version: 1.5.3.5
+Version: 1.6.5.8
 Author: Alex Sadleir [aut, cre], Zoe Meers [aut, trl], Luisa Bider [aut], Flourish Studio (Canva UK Operations Ltd) [cph]
 Maintainer: Alex Sadleir <alexs@canva.com>
 Authors@R: c(

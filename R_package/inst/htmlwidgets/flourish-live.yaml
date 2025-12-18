@@ -1,6 +1,6 @@
 dependencies:
 - name: flourish-live
-  script: 5.4.2.js
+  script: flourish-live-5.4.2.js
   src: htmlwidgets/lib/flourish-live
   stylesheet: flourish.css
   version: 5.4.2
