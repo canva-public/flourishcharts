@@ -79,33 +79,25 @@ HTMLWidgets.widget({
           opts.state = { ...x.base_state, ...x.state }
         }
         // Patch flourish code to use a pre-existing element to avoid RStudio security "feature"
+        // https://github.com/rstudio/rstudio/blob/b9279fae0015a31932a3e59823961b2302be627e/src/node/desktop/src/main/main-window.ts#L123
         // https://github.com/rstudio/rstudio/issues/12494
         // https://github.com/rstudio/rstudio/issues/12620
         // https://github.com/rstudio/rstudio/pull/12706
-        var embedding = {
+        window.embedding = {
           createEmbedIframe: () => {
             return document.getElementById(x.chart_id)
           },
-          isFixedHeight: isFixedHeight,
-          getHeightForBreakpoint: getHeightForBreakpoint,
-          startEventListeners: startEventListeners,
-          notifyParentWindow: notifyParentWindow,
-          initScrolly: initScrolly,
-          createScrolly: createScrolly,
-          isSafari: isSafari,
-          initCustomerAnalytics: initCustomerAnalytics,
-          addAnalyticsListener: addAnalyticsListener,
-          sendCustomerAnalyticsMessage: sendCustomerAnalyticsMessage
+          startEventListeners: () => {
+            // No-op: resize event listeners are not needed in htmlwidgets context
+          }
         };
-        // comment out the following line to disable the rstudio hack
-        window.embedding = embedding;
         // set the default html widget container height to 0.
         var container_div_id = opts.container.substring(1);
         document.getElementById(container_div_id).style.height = "0px";
         flourish_visualisation = new Fleet(opts);
         if (x.base_visualisation_id && !flourish_visualisation.template_loaded){
           flourish_visualisation.template_loaded = true
-        };
+        }
         if (x.state.snapshot) {
           var snapshot_options = x.state.snapshot;
           flourish_visualisation.snapshot(snapshot_options, function (error, data) {
